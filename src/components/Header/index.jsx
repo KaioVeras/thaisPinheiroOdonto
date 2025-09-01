@@ -1,9 +1,6 @@
 import { Container, ContainerLogo, NavBar, ContainerButtons, MobileButton } from './styles';
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-
-import { IoIosMenu } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
-
 
 import PrimaryButton from '../PrimaryButton';
 import SecondaryButton from '../SecondaryButton';
@@ -13,7 +10,7 @@ function Header() {
         <Container>
             <div className='header-content'>
                 <ContainerLogo>
-                    <img src="../../../public/logo.svg" alt="Logo Thais Pinheiro Odontologia" />
+                    <img src="/logo.svg" alt="Logo Thais Pinheiro Odontologia" />
 
                     <div className='logo-text'>
                         <h1>Thais Pinheiro {innerWidth < 500 ? "Odonto" : "Odontologia"}</h1>
