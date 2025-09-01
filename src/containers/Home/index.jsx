@@ -1,11 +1,14 @@
-import React from "react"
+import Header from '../../components/Header';
+import { Container } from './styles';
 
 function Home() {
  return (
-   <div>    
+   <Container>
+        <Header />
+
         <h1>Odonto</h1>
-        <p>Welcome to the Odonto application!</p>
-   </div>
+        <p>Bem-vindo ao site da Thais Pinheiro Odontologia!</p>
+   </Container>
  );
 }
 
