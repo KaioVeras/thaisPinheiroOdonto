@@ -63,15 +63,6 @@ export const ContainerLogo = styled.div`
       width: 40px;
       height: 40px;
     }
-
-    .logo-text h1 {
-      font-size: 17px;
-    }
-
-    .logo-text p {
-      font-size: 12px;
-      color: #4d9388;
-    }
   }
 `;
 
