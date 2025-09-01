@@ -7,7 +7,7 @@ export const Container = styled.header`
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   .header-content {
     max-width: 1400px;
