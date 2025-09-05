@@ -10,7 +10,8 @@ export const Container = styled.header`
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: fixed;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
 
   .header-content {
     max-width: 1400px;

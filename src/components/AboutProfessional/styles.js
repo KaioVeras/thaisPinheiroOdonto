@@ -6,7 +6,7 @@ export const AboutProfessionalContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0px;
+  padding: 40px 0px;
 
   .container-professional {
     display: flex;

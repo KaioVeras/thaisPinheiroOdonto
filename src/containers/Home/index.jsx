@@ -5,6 +5,7 @@ import Header from '../../components/Header';
 import NavBarOpen from '../../components/NavBarOpen';
 import HeroSection from '../../components/HeroSection';
 import AboutProfessional from '../../components/AboutProfessional';
+import Servicos from '../../components/Servicos';
 
 function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,6 +46,7 @@ function Home() {
       <ContentDiv ref={elementRef} className={isVisible ? 'visible' : ''}>
         <HeroSection />
         <AboutProfessional />
+        <Servicos />
       </ContentDiv>
     </Container>
   );

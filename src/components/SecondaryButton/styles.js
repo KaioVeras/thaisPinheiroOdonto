@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SecondaryButtonStyle = styled.button`
     height: ${props => props.height};
     width: ${props => props.width};
-    font-size: 16px;
+    font-size: ${props => props.fontSize ? props.fontSize : "16px"};
     background-color: #4D9388;
     border: 1px solid #4D9388;
     border-radius: ${props => props.radius ? props.radius : "4px"};
