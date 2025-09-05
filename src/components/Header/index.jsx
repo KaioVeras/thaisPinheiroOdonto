@@ -1,19 +1,27 @@
 import { Container, ContainerLogo, NavBar, ContainerButtons, MobileButton } from './styles';
+
+import { useMenuStore } from '../../store/menuStore'; 
+
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
+import { IoClose } from "react-icons/io5";
 
 import PrimaryButton from '../PrimaryButton';
 import SecondaryButton from '../SecondaryButton';
 
 function Header() {
+
+    const isOpenMenu = useMenuStore(state => state.isOpenMenu);
+    const toggleMenu = useMenuStore(state => state.toggleMenu);
+
     return (
         <Container>
             <div className='header-content'>
                 <ContainerLogo>
-                    <img src="/logo.svg" alt="Logo Thais Pinheiro Odontologia" />
+                    <img src="/logo1.svg" alt="Logo Thais Pinheiro Odontologia" />
 
                     <div className='logo-text'>
-                        <h1>Thais Pinheiro {innerWidth < 500 ? "Odonto" : "Odontologia"}</h1>
+                        <h1>Thaís Pinheiro {innerWidth < 500 ? "Odonto" : "Odontologia"}</h1>
                         <p>Especialista em Endodontia</p>
                     </div>
                 </ContainerLogo>
@@ -43,7 +51,9 @@ function Header() {
                     />
                 </ContainerButtons>
 
-                <MobileButton className='mobile-button'><FiMenu size={24} /></MobileButton>
+                <MobileButton className='mobile-button' onClick={toggleMenu}>
+                    {isOpenMenu ? <IoClose size={26} /> : <FiMenu size={24} />}
+                </MobileButton>
             </div>
         </Container >
     );

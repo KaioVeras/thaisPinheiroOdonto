@@ -1,15 +1,53 @@
+import { useState, useEffect, useRef } from 'react';
+import { Container, ContentDiv } from './styles';
+
 import Header from '../../components/Header';
-import { Container } from './styles';
+import NavBarOpen from '../../components/NavBarOpen';
+import HeroSection from '../../components/HeroSection';
+import AboutProfessional from '../../components/AboutProfessional';
 
 function Home() {
- return (
-   <Container>
-        <Header />
+  const [isVisible, setIsVisible] = useState(false);
+  const elementRef = useRef(null);
 
-        <h1>Odonto</h1>
-        <p>Bem-vindo ao site da Thais Pinheiro Odontologia!</p>
-   </Container>
- );
+  useEffect(() => {
+    const currentElement = elementRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2,
+      }
+    );
+
+    if (currentElement) {
+      observer.observe(currentElement);
+    }
+
+    return () => {
+      if (currentElement) {
+        observer.unobserve(currentElement);
+      }
+    };
+  }, []);
+
+  return (
+    <Container>
+      <Header />
+      <NavBarOpen />
+
+      <ContentDiv ref={elementRef} className={isVisible ? 'visible' : ''}>
+        <HeroSection />
+        <AboutProfessional />
+      </ContentDiv>
+    </Container>
+  );
 }
 
 export default Home;

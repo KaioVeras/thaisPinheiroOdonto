@@ -1,0 +1,75 @@
+import { HeroSectionContainer, HeroCard } from "./styles";
+import { Shield, Heart, Award, MessageCircle } from 'lucide-react';
+
+import SecondaryButton from "../SecondaryButton";
+import PrimaryButton from "../PrimaryButton";
+
+function HeroSection() {
+    return (
+        <HeroSectionContainer>
+            <div className="hero-content">
+                <div className="hero-title">
+                    <h1>Sorrir com saúde</h1><h1 className="hero-title-color">começa aqui</h1>
+                </div>
+
+                <p className="hero-description">Tratamento de canal com excelência, cuidado e responsabilidade. Preservamos a estrutura natural do seu dente com tecnologia avançada e atendimento humanizado.</p>
+
+                <div className="hero-cards">
+                    <HeroCard>
+                        <div className="icons">
+                            <Shield size={24} color="#4D9388" />
+                        </div>
+
+                        <div>
+                            <h4>Segurança</h4>
+                            <p>Protocolos rigorosos</p>
+                        </div>
+                    </HeroCard>
+
+                    <HeroCard>
+                        <div className="icons">
+                            <Heart size={24} color="#4D9388" />
+                        </div>
+
+                        <div>
+                            <h4>Cuidado</h4>
+                            <p>Suporte humanizado</p>
+                        </div>
+                    </HeroCard>
+
+                    <HeroCard>
+                        <div className="icons">
+                            <Award size={24} color="#4D9388" />
+                        </div>
+
+                        <div>
+                            <h4>Excelência</h4>
+                            <p>Resultados Superiores</p>
+                        </div>
+                    </HeroCard>
+                </div>
+
+
+                <div className="container-buttons">
+                    <SecondaryButton
+                        label={<><MessageCircle size={18} /> Agende sua consulta</>}
+                        width="280px"
+                        height="48px"
+                        link="https://wa.me/556135506324"
+                        radius="30px"
+                    />
+
+                    <PrimaryButton
+                        label="Saiba mais sobre nossos serviços"
+                        width="360px"
+                        height="48px"
+                        link="#"
+                        radius="30px"
+                    />
+                </div>
+            </div>
+        </HeroSectionContainer>
+    );
+}
+
+export default HeroSection;

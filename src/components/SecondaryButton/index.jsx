@@ -1,8 +1,8 @@
 import { SecondaryButtonStyle } from "./styles";
 
-function SecondaryButton({ label, width, height, link }) {
+function SecondaryButton({ label, width, height, link, radius }) {
     return (
-        <SecondaryButtonStyle width={width} height={height}>
+        <SecondaryButtonStyle width={width} height={height} radius={radius}>
             <a href={link} target="_blank">{label}</a>
         </SecondaryButtonStyle>
     );

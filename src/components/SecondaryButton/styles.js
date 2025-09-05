@@ -6,7 +6,7 @@ export const SecondaryButtonStyle = styled.button`
     font-size: 16px;
     background-color: #4D9388;
     border: 1px solid #4D9388;
-    border-radius: 4px;
+    border-radius: ${props => props.radius ? props.radius : "4px"};
     cursor: pointer;
     transition: all 0.3s;
 

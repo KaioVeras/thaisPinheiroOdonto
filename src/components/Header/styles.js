@@ -8,11 +8,14 @@ export const Container = styled.header`
   justify-content: center;
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
 
   .header-content {
     max-width: 1400px;
     width: 100%;
-    padding: 16px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
