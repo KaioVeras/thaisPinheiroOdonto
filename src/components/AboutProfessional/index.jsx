@@ -1,14 +1,14 @@
 import { AboutProfessionalContainer, ContentProfessional } from "./styles";
 
 import { Award } from 'lucide-react';
+import professionalImage from '../../Assets/d8f0747c-9942-44d0-9c13-c2015ea96c87.png';
 
 function AboutProfessional() {
     return (
         <AboutProfessionalContainer>
             <div className="container-professional">
 
-                <img src="public/d8f0747c-9942-44d0-9c13-c2015ea96c87.png" className="image" />
-
+                <img src={professionalImage} className="image" />
 
                 <ContentProfessional>
                     <h1>Dra. Thaís Pinheiro</h1>
