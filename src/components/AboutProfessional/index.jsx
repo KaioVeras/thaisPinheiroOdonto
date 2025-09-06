@@ -7,7 +7,7 @@ function AboutProfessional() {
         <AboutProfessionalContainer>
             <div className="container-professional">
 
-                <img src="../../../public/d8f0747c-9942-44d0-9c13-c2015ea96c87.png" className="image" />
+                <img src="/public/d8f0747c-9942-44d0-9c13-c2015ea96c87.png" className="image" />
 
 
                 <ContentProfessional>
