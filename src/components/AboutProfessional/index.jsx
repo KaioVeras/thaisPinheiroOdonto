@@ -6,9 +6,9 @@ function AboutProfessional() {
     return (
         <AboutProfessionalContainer>
             <div className="container-professional">
-                <div className="image">
-                    Imagem
-                </div>
+
+                <img src="../../../public/d8f0747c-9942-44d0-9c13-c2015ea96c87.png" className="image" />
+
 
                 <ContentProfessional>
                     <h1>Dra. Thaís Pinheiro</h1>
@@ -21,7 +21,7 @@ function AboutProfessional() {
                     </div>
 
                     <p className="paragraph-cro">
-                        <Award size={20}/>
+                        <Award size={20} />
                         CRO-DF 8454
                     </p>
                 </ContentProfessional>

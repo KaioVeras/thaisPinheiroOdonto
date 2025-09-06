@@ -24,6 +24,10 @@ export const AboutProfessionalContainer = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
   }
 `;
 

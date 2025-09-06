@@ -43,6 +43,7 @@ export const ContainerCards = styled.div`
     padding: 24px;
     gap: 22px;
     text-align: left;
+    transition: all 0.3s;
 
     h3 {
       font-size: 20px;
@@ -50,6 +51,15 @@ export const ContainerCards = styled.div`
 
     p {
         color: #4b5563;
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+        h3 {
+            color: #4d9388;
+        }
     }
   }
 

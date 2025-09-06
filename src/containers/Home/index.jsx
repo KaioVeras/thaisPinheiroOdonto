@@ -6,6 +6,7 @@ import NavBarOpen from '../../components/NavBarOpen';
 import HeroSection from '../../components/HeroSection';
 import AboutProfessional from '../../components/AboutProfessional';
 import Servicos from '../../components/Servicos';
+import AboutClinic from '../../components/AboutClinic';
 
 function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -47,6 +48,7 @@ function Home() {
         <HeroSection />
         <AboutProfessional />
         <Servicos />
+        <AboutClinic />
       </ContentDiv>
     </Container>
   );
