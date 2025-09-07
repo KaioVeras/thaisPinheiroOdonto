@@ -4,6 +4,7 @@ export const AboutClinicContainer = styled.section`
   padding: 80px 0;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -17,7 +18,7 @@ export const AboutClinicContainer = styled.section`
     gap: 20px;
   }
 
-  img {
+  .image-clinic {
     width: 570px;
     height: 380px;
     border-radius: 10px;
@@ -36,6 +37,19 @@ export const DescriptionClinic = styled.div`
   h1 {
     color: #4d9388;
   }
+
+  .paragraph-title {
+    color: #374151;
+    font-size: 18px;
+  }
+
+  p {
+    color: #4b5563
+  };
+
+  h4 {
+    color: #1f2937;
+  }
 `;
 
 
@@ -43,7 +57,6 @@ export const ContainerList = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 80%;
     margin-top: 20px;
 
     .icon {
@@ -61,5 +74,7 @@ export const ContainerList = styled.div`
         display: flex;
         align-items: center;
         gap: 20px;
+        width: 90%;
     }
 `;
+

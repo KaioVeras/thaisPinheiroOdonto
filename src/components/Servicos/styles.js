@@ -47,6 +47,7 @@ export const ContainerCards = styled.div`
 
     h3 {
       font-size: 20px;
+      color: #1f2937;
     }
 
     p {

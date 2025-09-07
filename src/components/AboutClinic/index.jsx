@@ -8,7 +8,7 @@ function AboutClinic() {
             <div className='container-clinic'>
                 <DescriptionClinic>
                     <h1>Nossa Clínica</h1>
-                    <p>Um ambiente que une tecnologia e acolhimento.</p>
+                    <p className='paragraph-title'>Um ambiente que une tecnologia e acolhimento.</p>
                     <p>Nosso consultório foi projetado para oferecer o melhor em saúde bucal, com equipamentos de última geração e um ambiente acolhedor. Estamos comprometidos em transformar sua visita ao dentista em uma experiência tranquila e positiva.</p>
 
                     <ContainerList>
@@ -30,7 +30,7 @@ function AboutClinic() {
 
                             <div>
                                 <h4>Tecnologia Avançada</h4>
-                                <p>Equipamentos modernos para diagnósticos precisos e tratamentos eficazes.</p>
+                                <p>Equipamentos modernos para precisão nos tratamentos.</p>
                             </div>
                         </div>
 
@@ -49,7 +49,7 @@ function AboutClinic() {
                     </ContainerList>
                 </DescriptionClinic>
 
-                <img src='https://lh3.googleusercontent.com/p/AF1QipOAVKm451ut-6lEGZZ-Q_OAiBV9fEfQiomfdv7e=s680-w680-h510' alt='Imagem da clínica' />
+                <img src='https://lh3.googleusercontent.com/p/AF1QipOAVKm451ut-6lEGZZ-Q_OAiBV9fEfQiomfdv7e=s680-w680-h510' alt='Imagem da clínica' className='image-clinic'/>
             </div>
         </AboutClinicContainer>
     );
