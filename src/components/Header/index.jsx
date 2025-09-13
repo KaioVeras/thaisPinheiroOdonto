@@ -18,7 +18,7 @@ function Header() {
         <Container>
             <div className='header-content'>
                 <ContainerLogo>
-                    <img src="/logo1.svg" alt="Logo Thais Pinheiro Odontologia" />
+                    <img src="https://storage.googleapis.com/thais-odonto-imagens/logoThaisOdonto.svg" alt="Logo Thais Pinheiro Odontologia" />
 
                     <div className='logo-text'>
                         <h1>Thaís Pinheiro {innerWidth < 500 ? "Odonto" : "Odontologia"}</h1>

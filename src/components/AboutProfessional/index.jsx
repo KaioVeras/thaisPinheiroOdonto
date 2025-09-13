@@ -2,8 +2,6 @@ import { AboutProfessionalContainer, ContentProfessional } from "./styles";
 
 import { Award } from 'lucide-react';
 
-import professionalImage from '../../Assets/d8f0747c-9942-44d0-9c13-c2015ea96c87.png';
-
 function AboutProfessional() {
     return (
         <AboutProfessionalContainer>

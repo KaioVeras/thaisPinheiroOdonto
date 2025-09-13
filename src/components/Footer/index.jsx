@@ -1,7 +1,7 @@
 import { FooterContainer, DescriptionDoctor, FooterContent, FastLinks, Services, Contato, Line, CopyRight } from './styles';
 
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { MapPin, Phone, Clock, Copy } from 'lucide-react';
+import { MapPin, Phone, Clock, Copyright } from 'lucide-react';
 
 function Footer() {
     return (
@@ -9,7 +9,7 @@ function Footer() {
             <FooterContent>
                 <DescriptionDoctor>
                     <div className='logo-footer'>
-                        <img src="/public/logo1.svg" alt="Logo Thais Pinheiro Odontologia" />
+                        <img src="https://storage.googleapis.com/thais-odonto-imagens/logoThaisOdonto.svg" alt="Logo Thais Pinheiro Odontologia" />
                         <div>
                             <h3>Thaís Pinheiro Odontologia</h3>
                             <p>Especialista em Endodontia</p>
@@ -81,7 +81,7 @@ function Footer() {
             <Line>{/** Linha de separação */}</Line>
 
             <CopyRight>
-                <p>© 2025 Thaís Pinheiro Odontologia. Todos os direitos reservados.</p>
+                <p><Copyright size={12} /> 2025 Thaís Pinheiro Odontologia. Todos os direitos reservados.</p>
 
                 <div className='terms'>
                     <p>Política de Privacidade</p>
