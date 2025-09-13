@@ -8,9 +8,11 @@ import AboutProfessional from '../../components/AboutProfessional';
 import Servicos from '../../components/Servicos';
 import AboutClinic from '../../components/AboutClinic';
 import QualityNote from '../../components/QualityNote';
+import Contato from '../../components/Contato';
+import Footer from '../../components/Footer';
 
 function Home() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const elementRef = useRef(null);
 
   useEffect(() => {
@@ -51,6 +53,8 @@ function Home() {
         <Servicos />
         <AboutClinic />
         <QualityNote />
+        <Contato/>
+        <Footer/>
       </ContentDiv>
     </Container>
   );

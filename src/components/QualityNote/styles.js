@@ -15,21 +15,14 @@ export const QualityNoteContainer = styled.section`
     gap: 20px;
 
     h1 {
-      color: "#1f2937";
-      font-size: 36px;
+      color: #4b9388;
+      font-size: 34px;
     }
 
     p {
       font-size: 20px;
       color: #4b5563;
-      width: 670px;;
-    }
-
-    .line {
-      background-color: #4b9388;
-      height: 4px;
-      width: 80px;
-      border-radius: 2px;
+      width: 670px;
     }
   }
 `;

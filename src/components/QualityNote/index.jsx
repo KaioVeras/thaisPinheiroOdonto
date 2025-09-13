@@ -9,7 +9,6 @@ function QualityNote() {
             <div className='description-quality'>
                 <h1>O que nossos pacientes dizem</h1>
                 <p>A satisfação dos nossos pacientes é nossa maior recompensa. Veja alguns depoimentos de quem confia em nosso trabalho.</p>
-                <div className='line'></div>
             </div>
 
             <ContainerCards>

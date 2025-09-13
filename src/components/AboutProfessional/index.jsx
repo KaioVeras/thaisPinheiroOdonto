@@ -9,7 +9,7 @@ function AboutProfessional() {
         <AboutProfessionalContainer>
             <div className="container-professional">
 
-                <img src={professionalImage} className="image" />
+                <img src="https://storage.googleapis.com/thais-odonto-imagens/perfilThais.jpg" className="image" alt="Imagem Dra. Thaís Pinheiro"/>
 
                 <ContentProfessional>
                     <h1>Dra. Thaís Pinheiro</h1>
