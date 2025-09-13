@@ -64,6 +64,7 @@ export const ContentProfessional = styled.div`
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  padding: 0 30px;
 
   h1 {
     font-size: 30px;
@@ -99,6 +100,6 @@ export const ContentProfessional = styled.div`
   }
 
   @media (max-width: 850px) {
-    width: 90%;
+    width: 100%;
   }
 `;
