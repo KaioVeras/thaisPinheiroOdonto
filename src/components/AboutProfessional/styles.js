@@ -7,6 +7,7 @@ export const AboutProfessionalContainer = styled.section`
   align-items: center;
   justify-content: center;
   padding: 40px 0px;
+  transition: all 0.3s;
 
   .container-professional {
     display: flex;
@@ -29,6 +30,32 @@ export const AboutProfessionalContainer = styled.section`
     border: 3px solid #fff;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
   }
+
+  @media (max-width: 950px) {
+    .image {
+      width: 340px;
+      height: 340px;
+    }
+  }
+
+   @media (max-width: 850px) {
+    .container-professional {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .image {
+      width: 384px;
+      height: 384px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .image {
+      width: 300px;
+      height: 300px;
+    }
+  }
 `;
 
 export const ContentProfessional = styled.div`
@@ -36,6 +63,7 @@ export const ContentProfessional = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-align: left;
 
   h1 {
     font-size: 30px;
@@ -68,5 +96,9 @@ export const ContentProfessional = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+
+  @media (max-width: 850px) {
+    width: 90%;
   }
 `;

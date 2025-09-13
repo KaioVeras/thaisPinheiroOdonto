@@ -30,7 +30,7 @@ export const HeroSectionContainer = styled.section`
         font-size: 20px;
         color: #4b5563;
         width: 770px;
-        margin-top: 16px;
+        margin-top: 20px;
     }
 
     .hero-cards {
@@ -113,9 +113,12 @@ export const HeroCard = styled.div`
 
     @media (max-width: 700px) {
         width: 90%;
+        gap: 60px;
     }
 
     @media (max-width: 500px) {
         width: 100%;
+        justify-content: space-evenly;
+        gap: 0px;
     }
 `;
