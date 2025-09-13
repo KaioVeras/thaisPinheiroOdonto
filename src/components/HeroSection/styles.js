@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 export const HeroSectionContainer = styled.section`
     background-color: #FCFCFD;
-    height: 950px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 900px;
+    width: 100%;
+    padding: 0px 30px;
 
     .hero-content {
         max-width: 900px;
@@ -33,9 +35,10 @@ export const HeroSectionContainer = styled.section`
 
     .hero-cards {
         display: flex;
-        justify-content: space-around;
         margin-top: 32px;
         gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .container-buttons {
@@ -43,6 +46,42 @@ export const HeroSectionContainer = styled.section`
         justify-content: center;
         gap: 20px;
         margin-top: 32px;
+    }
+
+    @media (max-width: 840px) {
+        .hero-cards {
+            justify-content: center;
+        }
+
+        .hero-description {
+            width: 100%;
+        }
+
+        .hero-title h1 {
+            font-size: 48px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .hero-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .hero-title h1 {
+            font-size: 36px;
+        }
+
+        .hero-description {
+            font-size: 18px;
+        }
     }
 `;
 
@@ -57,6 +96,7 @@ export const HeroCard = styled.div`
     align-items: center;
     justify-content: center;
     gap: 8px;
+    transition: all 0.3s;
 
     p {
         font-size: 14px;
@@ -69,5 +109,13 @@ export const HeroCard = styled.div`
         justify-content: center;
         border-radius: 20px;
         padding: 8px;
+    }
+
+    @media (max-width: 700px) {
+        width: 90%;
+    }
+
+    @media (max-width: 500px) {
+        width: 100%;
     }
 `;

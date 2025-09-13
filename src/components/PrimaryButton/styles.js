@@ -17,6 +17,7 @@ export const PrimaryButtonStyle = styled.button`
         justify-content: center;
         align-items: center;
         gap: 12px;
+        padding: 0 20px;
     }
 
     &:hover {
@@ -25,5 +26,13 @@ export const PrimaryButtonStyle = styled.button`
         a {
             color: #fff;
         }
+    }
+
+    @media (max-width: 700px) {
+        width: 90%;
+    }
+
+    @media (max-width: 500px) {
+        width: 100%;
     }
 `;
