@@ -50,7 +50,7 @@ function Servicos() {
                         <TbDentalBroken size={24} color="#4d9388" />
                     </div>
                     <h3>Endodontia (Canal)</h3>
-                    <p>Alívio da dor e preservação do seu dente de forma segura e confortável.</p>
+                    <p>Alívio da dor e preservação do seu dente com tecnologia de ponta, de forma segura e confortável.</p>
                 </div>
 
                 <div className='card'>

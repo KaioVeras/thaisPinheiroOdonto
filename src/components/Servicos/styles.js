@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ServicosContainer = styled.section`
   background-color: #fcfcfd;
-  padding: 80px 0px;
+  padding: 80px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,8 @@ export const ServicosContainer = styled.section`
   .descricao {
     color: #4b5563;
     font-size: 18px;
-    width: 670px;
+    max-width: 670px;
+    width: 100%;
   }
 `;
 
@@ -41,7 +42,7 @@ export const ContainerCards = styled.div`
     flex-direction: column;
     justify-content: center;
     padding: 24px;
-    gap: 22px;
+    gap: 18px;
     text-align: left;
     transition: all 0.3s;
 
@@ -73,4 +74,24 @@ export const ContainerCards = styled.div`
     align-items: center;
     justify-content: center;
   }
+
+    @media (max-width: 1083px) {
+      .card {
+        width: 40%;
+        min-width: 316px;
+      }
+    }
+
+    @media (max-width: 740px) {
+      .card {
+        width: 100%;
+        height: 240px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        height: 294px;
+      }
+    }
 `;
