@@ -27,11 +27,21 @@ export const ServicosContainer = styled.section`
     background-color: #4D9388;
     border: none;
     border-radius: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
 
     a {
       text-decoration: none;
       color: #fff;
+      height: 100%;
       font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:hover {
+      background-color: #5BA49A;
     }
   }
 

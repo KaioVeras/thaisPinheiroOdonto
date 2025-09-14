@@ -14,6 +14,7 @@ export const SecondaryButtonStyle = styled.button`
         text-decoration: none;
         color: #fff;
         display: flex;
+        height: 100%;
         justify-content: center;
         align-items: center;
         gap: 12px;
@@ -22,10 +23,6 @@ export const SecondaryButtonStyle = styled.button`
 
     &:hover {
         background-color: #5BA49A;
-    
-        a {
-            color: #fff;
-        }
     }
 
     @media (max-width: 700px) {

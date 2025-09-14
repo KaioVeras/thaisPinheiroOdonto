@@ -14,6 +14,7 @@ export const PrimaryButtonStyle = styled.button`
         text-decoration: none;
         color: #4D9388;
         display: flex;
+        height: 100%;
         justify-content: center;
         align-items: center;
         gap: 12px;

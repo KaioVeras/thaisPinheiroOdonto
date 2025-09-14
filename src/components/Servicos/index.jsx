@@ -61,7 +61,7 @@ function Servicos() {
             </ContainerCards>
 
             <button className='secondary-button-mobile'>
-                <a href="https://wa.me/556135506324">Precisa de um especialista? Fale conosco</a>
+                <a href="https://wa.me/556135506324" target='_blank'>Precisa de um especialista? Fale conosco</a>
             </button>
         </ServicosContainer>
     );
