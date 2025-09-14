@@ -20,6 +20,26 @@ export const ServicosContainer = styled.section`
     max-width: 670px;
     width: 100%;
   }
+
+  .secondary-button-mobile {
+    width: 355px;
+    height: 47px;
+    background-color: #4D9388;
+    border: none;
+    border-radius: 4px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 740px) {
+      .secondary-button-mobile {
+        width: 100%;
+      }
+    }
 `;
 
 export const ContainerCards = styled.div`

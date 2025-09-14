@@ -3,8 +3,6 @@ import { ServicosContainer, ContainerCards } from './styles';
 import { Stars, BriefcaseMedical, ShieldPlus, HeartPulse } from 'lucide-react';
 import { TbDentalBroken, TbDental } from "react-icons/tb";
 
-import SecondaryButton from '../SecondaryButton';
-
 function Servicos() {
     return (
         <ServicosContainer>
@@ -62,13 +60,9 @@ function Servicos() {
                 </div>
             </ContainerCards>
 
-            <SecondaryButton
-                label="Precisa de um especialista? Fale conosco"
-                width="355px"
-                height="44px"
-                fontSize="14px"
-                link="https://wa.me/556135506324"
-            />
+            <button className='secondary-button-mobile'>
+                <a href="https://wa.me/556135506324">Precisa de um especialista? Fale conosco</a>
+            </button>
         </ServicosContainer>
     );
 }
