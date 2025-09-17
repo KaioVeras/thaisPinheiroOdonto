@@ -14,7 +14,7 @@ function AboutClinic() {
                     <ContainerList>
                         <div className='item-list'>
                             <div className='icon'>
-                                <Smile size={20}/>
+                                <Smile size={24}/>
                             </div>
 
                             <div>
@@ -25,7 +25,7 @@ function AboutClinic() {
 
                         <div className='item-list'>
                             <div className='icon'>
-                               <Zap size={20}/>
+                               <Zap size={24}/>
                             </div>
 
                             <div>
@@ -36,12 +36,12 @@ function AboutClinic() {
 
                         <div className='item-list'>
                             <div className='icon'>
-                                <ShieldCheck size={20}/>
+                                <ShieldCheck size={24}/>
                             </div>
 
                             <div>
                                 <h4>Segurança e Ética</h4>
-                                <p>Seguimos rigorosos padrões de biossegurança e ética profissional.</p>
+                                <p>Seguimos rigorosos padrões de ética profissional.</p>
                             </div>
                         </div>
 
