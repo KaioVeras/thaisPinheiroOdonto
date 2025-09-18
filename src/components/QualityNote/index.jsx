@@ -100,12 +100,11 @@ function QualityNote() {
             <NotesGoogle>
                 <h3>Seja nosso próximo paciente satisfeito!</h3>
                 <p>Agende sua consulta e descubra como podemos cuidar da sua saúde bucal com excelência e carinho.</p>
-                
+
                 <div className='stars-google'>
-                    <h4 className='title-star'>
-                        <FaStar size={20} color="#4b9388" />
-                        5/5 estrelas no Google
-                    </h4>
+                    <div className='title-star'>
+                        <h4><FaStar size={20} color="#4b9388" className='icon-star' />5/5 estrelas no Google</h4>
+                    </div>
 
                     <h4>
                         +1000 pacientes atendidos

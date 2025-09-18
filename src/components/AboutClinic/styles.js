@@ -83,6 +83,10 @@ export const DescriptionClinic = styled.div`
   @media (max-width: 1050px) {
     width: 100%;
     text-align: center;
+
+    h1 {
+      font-size: 34px;
+    }
   }
 `;
 
