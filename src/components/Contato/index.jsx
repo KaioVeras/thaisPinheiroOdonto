@@ -15,7 +15,7 @@ function Contato() {
                 <ContatoContent>
                     <div className='dados-content'>
                         <Content>
-                            <MapPin size={25} className='icon' />
+                            <MapPin size={24} className='icon' />
                             <div className='content-item'>
                                 <h4>Endereço</h4>
                                 <p>Av. Pau Brasil, 10 - Águas Claras, Brasília - DF, 71926-000</p>
@@ -23,7 +23,7 @@ function Contato() {
                         </Content>
 
                         <Content>
-                            <Phone size={25} className='icon' />
+                            <Phone size={24} className='icon' />
                             <div className='content-item'>
                                 <h4>Telefone</h4>
                                 <p>(61) 3550-6324</p>
@@ -31,7 +31,7 @@ function Contato() {
                         </Content>
 
                         <Content>
-                            <FaInstagram size={25} className='icon' />
+                            <FaInstagram size={24} className='icon' />
                             <div className='content-item'>
                                 <h4>Instagram</h4>
                                 <p>@thais_pinheiro_odontologia</p>
