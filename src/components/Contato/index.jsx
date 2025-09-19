@@ -15,7 +15,7 @@ function Contato() {
                 <ContatoContent>
                     <div className='dados-content'>
                         <Content>
-                            <MapPin size={24} className='icon' />
+                            <MapPin size={24} className='icon-map' />
                             <div className='content-item'>
                                 <h4>Endereço</h4>
                                 <p>Av. Pau Brasil, 10 - Águas Claras, Brasília - DF, 71926-000</p>

@@ -7,15 +7,73 @@ export const FooterContainer = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 48px 20px;
+    padding: 48px 30px;
 `;
 
 export const FooterContent = styled.div`
     width: 100%;
     display: flex;
-    gap: 50px;
+    gap: 180px;
     justify-content: center;
     flex-wrap: wrap;
+
+    .links-footer {
+        display: flex;
+        gap: 80px;
+    }
+
+    .divider-links {
+        display: flex;
+        gap: 150px;
+    }
+
+    @media (max-width: 1420px) {
+        gap: 100px;
+
+        .links-footer {
+            gap: 50px;
+        }
+
+        .divider-links {
+            gap: 100px;
+        }
+    }
+
+    @media (max-width: 1260px) {
+        gap: 50px;
+
+        .links-footer {
+            gap: 10px;
+        }
+
+        .divider-links {
+            gap: 50px;
+        }
+    }
+
+    @media (max-width: 1115px) {
+        gap: 100px;
+        justify-content: center;
+
+        .links-footer {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .divider-links {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    @media (max-width: 784px) {
+        gap: 20px;
+    }
+
+    @media (max-width: 703px) {
+        justify-content: flex-start;
+        gap: 40px;
+    }
 `;
 
 export const DescriptionDoctor = styled.div`
@@ -71,6 +129,12 @@ export const DescriptionDoctor = styled.div`
             }
         }
     }
+
+    @media (max-width: 703px) {
+        p {
+            width: 100%;
+        }
+    }
 `;
 
 export const FastLinks = styled.div`
@@ -104,7 +168,6 @@ export const FastLinks = styled.div`
 
 export const Services = styled.div`
     text-align: left;
-    margin-left: 150px;
 
     h3 {
         color: #fff;
@@ -126,7 +189,6 @@ export const Services = styled.div`
 
 export const Contato = styled.div`
     text-align: left;
-    margin-left: 150px;
 
     h3 {
         color: #fff;
@@ -158,6 +220,14 @@ export const Line = styled.div`
     height: 1px;
     width: 78%;
     margin: 32px 0;
+
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+
+    @media (max-width: 700px) {
+        width: 100%;
+    }
 `;
 
 export const CopyRight = styled.div`
@@ -178,5 +248,12 @@ export const CopyRight = styled.div`
     p {
         color: #9ca3af;
         font-size: 14px;
+    }
+
+    @media (max-width: 1025px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
     }
 `;

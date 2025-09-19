@@ -103,7 +103,7 @@ export const Content = styled.div`
   display: flex;
   gap: 20px;
 
-  .icon {
+  .icon, .icon-map {
     color: #4b9388;
     margin-top: 3px;
   }
@@ -128,6 +128,22 @@ export const Content = styled.div`
       h4 {
         color: #4b9388;
       }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .icon-map {
+      font-size: 28px;
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .icon-map {
+      font-size: 32px;
+      width: 32px;
+      height: 32px;
     }
   }
 `;
