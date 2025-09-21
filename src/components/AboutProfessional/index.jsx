@@ -4,7 +4,7 @@ import { Award } from 'lucide-react';
 
 function AboutProfessional() {
     return (
-        <AboutProfessionalContainer>
+        <AboutProfessionalContainer id="about">
             <div className="container-professional">
 
                 <img src="https://storage.googleapis.com/thais-odonto-imagens/perfilThais.jpg" className="image" alt="Imagem Dra. Thaís Pinheiro"/>

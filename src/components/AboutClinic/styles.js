@@ -7,6 +7,7 @@ export const AboutClinicContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 200px;
 
   .container-clinic {
     width: 100%;

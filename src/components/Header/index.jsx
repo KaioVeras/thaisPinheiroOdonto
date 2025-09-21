@@ -9,7 +9,7 @@ import { IoClose } from "react-icons/io5";
 import PrimaryButton from '../PrimaryButton';
 import SecondaryButton from '../SecondaryButton';
 
-function Header() {
+function Header({ onScrollSection }) {
 
     const isOpenMenu = useMenuStore(state => state.isOpenMenu);
     const toggleMenu = useMenuStore(state => state.toggleMenu);
@@ -28,11 +28,24 @@ function Header() {
 
                 <NavBar>
                     <ul>
-                        <li>Início</li>
-                        <li>Sobre</li>
-                        <li>Serviços</li>
-                        <li>Localização</li>
-                        <li>Contato</li>
+                        <li>
+                            <a onClick={() => onScrollSection('hero-section')}>Início</a>
+                        </li>
+                        <li>
+                            <a onClick={() => onScrollSection('about')}>Sobre</a>
+                        </li>
+                        <li>
+                            <a onClick={() => onScrollSection('services')}>Serviços</a>
+                        </li>
+                        <li>
+                            <a onClick={() => onScrollSection('about-clinic')}>Clínica</a>
+                        </li>
+                        <li>
+                            <a onClick={() => onScrollSection('quality')}>Clientes</a>
+                        </li>
+                        <li>
+                            <a onClick={() => onScrollSection('contato')}>Contato</a>
+                        </li>
                     </ul>
                 </NavBar>
 

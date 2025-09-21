@@ -5,7 +5,7 @@ import { MapPin, Phone } from 'lucide-react';
 
 function Contato() {
     return (
-        <ContatoContainer>
+        <ContatoContainer id='contato'>
             <div className='description-contato'>
                 <h1>Entre em Contato</h1>
                 <p>Estamos prontos para cuidar da sua saúde bucal. Entre em contato conosco e agende sua consulta.</p>

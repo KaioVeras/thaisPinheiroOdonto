@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from 'react';
 import { Container, ContentDiv } from './styles';
 
 import Header from '../../components/Header';
@@ -12,49 +11,30 @@ import Contato from '../../components/Contato';
 import Footer from '../../components/Footer';
 
 function Home() {
-  const [isVisible, setIsVisible] = useState(true);
-  const elementRef = useRef(null);
 
-  useEffect(() => {
-    const currentElement = elementRef.current;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.2,
-      }
-    );
-
-    if (currentElement) {
-      observer.observe(currentElement);
+  const handleScrollSection = (id) => {
+    const element = document.getElementById(id);
+    if(element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
     }
-
-    return () => {
-      if (currentElement) {
-        observer.unobserve(currentElement);
-      }
-    };
-  }, []);
+  }
 
   return (
     <Container>
-      <Header />
-      <NavBarOpen />
+      <Header onScrollSection={handleScrollSection}/>
+      <NavBarOpen onScrollSection={handleScrollSection}/>
 
-      <ContentDiv ref={elementRef} className={isVisible ? 'visible' : ''}>
+      <ContentDiv>
         <HeroSection />
         <AboutProfessional />
         <Servicos />
         <AboutClinic />
         <QualityNote />
-        <Contato/>
-        <Footer/>
+        <Contato />
+        <Footer />
       </ContentDiv>
     </Container>
   );

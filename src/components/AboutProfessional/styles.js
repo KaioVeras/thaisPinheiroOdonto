@@ -6,8 +6,9 @@ export const AboutProfessionalContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 0px;
+  padding: 80px 0px;
   transition: all 0.3s;
+  scroll-margin-top: 200px;
 
   .container-professional {
     display: flex;

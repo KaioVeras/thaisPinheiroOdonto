@@ -6,17 +6,37 @@ import SecondaryButton from "../SecondaryButton";
 
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
-function NavBarOpen() {
+function NavBarOpen({ onScrollSection }) {
     const isOpenMenu = useMenuStore(state => state.isOpenMenu);
+    const toggleMenu = useMenuStore(state => state.toggleMenu)
+
+    const handleScrollAndClose = (sectionId) => {
+        onScrollSection(sectionId)
+        toggleMenu();
+    }
+
     return (
         <NavBarOpenContainer display={isOpenMenu ? 'block' : 'none'}>
             <NavBar>
                 <ul>
-                    <li>Início</li>
-                    <li>sobre</li>
-                    <li>Serviços</li>
-                    <li>Localização</li>
-                    <li>Contato</li>
+                    <li>
+                        <a onClick={() => handleScrollAndClose('hero-section')}>Início</a>
+                    </li>
+                    <li>
+                        <a onClick={() => handleScrollAndClose('about')}>Sobre</a>
+                    </li>
+                    <li>
+                        <a onClick={() => handleScrollAndClose('services')}>Serviços</a>
+                    </li>
+                    <li>
+                        <a onClick={() => handleScrollAndClose('about-clinic')}>Clínica</a>
+                    </li>
+                    <li>
+                        <a onClick={() => handleScrollAndClose('quality')}>Clientes</a>
+                    </li>
+                    <li>
+                        <a onClick={() => handleScrollAndClose('contato')}>Contato</a>
+                    </li>
                 </ul>
             </NavBar>
 

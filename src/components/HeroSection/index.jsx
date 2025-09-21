@@ -6,7 +6,7 @@ import PrimaryButton from "../PrimaryButton";
 
 function HeroSection() {
     return (
-        <HeroSectionContainer>
+        <HeroSectionContainer id="hero-section">
             <div className="hero-content">
                 <div className="hero-title">
                     <h1>Sorrir com saúde</h1><h1 className="hero-title-color">começa aqui</h1>

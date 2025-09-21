@@ -11,6 +11,10 @@ import styled from 'styled-components';
     left: 0;
     z-index: 10;
     background-color: #fff;
+
+    @media (min-width: 1150px) {
+        display: none;
+    }
 `;
 
 export const NavBar = styled.nav`
@@ -23,6 +27,15 @@ export const NavBar = styled.nav`
         flex-direction: column;
         gap: 15px;
         align-items: flex-start;
+    }
+
+    li a {
+        color: #4b5563;
+        cursor: pointer;
+
+        &:hover {
+            color: #4d9388;
+        }
     }
 `;
 

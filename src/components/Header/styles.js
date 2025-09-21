@@ -22,7 +22,7 @@ export const Container = styled.header`
     justify-content: space-between;
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1150px) {
     nav {
       display: none;
     }
@@ -77,12 +77,14 @@ export const NavBar = styled.nav`
     gap: 20px;
   }
 
-  li {
-    cursor: pointer;
-  }
+  li a {
+    text-decoration: none;
+    color: #4b5563;
+    cursor: pointer; 
 
-  li:hover {
-    color: #4d9388;
+    &:hover {
+      color: #4d9388;
+    }
   }
 `;
 

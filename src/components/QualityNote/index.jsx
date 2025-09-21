@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 
 function QualityNote() {
     return (
-        <QualityNoteContainer>
+        <QualityNoteContainer id='quality'>
             <div className='description-quality'>
                 <h1>O que nossos pacientes dizem</h1>
                 <p>A satisfação dos nossos pacientes é nossa maior recompensa. Veja alguns depoimentos de quem confia em nosso trabalho.</p>

@@ -4,7 +4,7 @@ import { ShieldCheck, Smile, Zap } from 'lucide-react';
 
 function AboutClinic() {
     return (
-        <AboutClinicContainer>
+        <AboutClinicContainer id='about-clinic'>
             <div className='container-clinic'>
                 <DescriptionClinic>
                     <h1>Nossa Clínica</h1>
@@ -14,7 +14,7 @@ function AboutClinic() {
                     <ContainerList>
                         <div className='item-list'>
                             <div className='icon'>
-                                <Smile size={24}/>
+                                <Smile size={24} />
                             </div>
 
                             <div>
@@ -25,7 +25,7 @@ function AboutClinic() {
 
                         <div className='item-list'>
                             <div className='icon'>
-                               <Zap size={24}/>
+                                <Zap size={24} />
                             </div>
 
                             <div>
@@ -36,7 +36,7 @@ function AboutClinic() {
 
                         <div className='item-list'>
                             <div className='icon'>
-                                <ShieldCheck size={24}/>
+                                <ShieldCheck size={24} />
                             </div>
 
                             <div>
@@ -49,7 +49,7 @@ function AboutClinic() {
                     </ContainerList>
                 </DescriptionClinic>
 
-                <img src='https://storage.googleapis.com/thais-odonto-imagens/consultorio.webp' alt='Imagem da clínica' className='image-clinic'/>
+                <img src='https://storage.googleapis.com/thais-odonto-imagens/consultorio.webp' alt='Imagem da clínica' className='image-clinic' />
             </div>
         </AboutClinicContainer>
     );
