@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Container, ContentDiv } from './styles';
 
 import Header from '../../components/Header';
@@ -9,12 +10,13 @@ import AboutClinic from '../../components/AboutClinic';
 import QualityNote from '../../components/QualityNote';
 import Contato from '../../components/Contato';
 import Footer from '../../components/Footer';
+import FadeInSection from '../../components/FadeInSection';
 
 function Home() {
 
   const handleScrollSection = (id) => {
     const element = document.getElementById(id);
-    if(element) {
+    if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
@@ -22,19 +24,43 @@ function Home() {
     }
   }
 
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, [])
+
   return (
     <Container>
-      <Header onScrollSection={handleScrollSection}/>
-      <NavBarOpen onScrollSection={handleScrollSection}/>
+      <Header onScrollSection={handleScrollSection} />
+      <NavBarOpen onScrollSection={handleScrollSection} />
 
       <ContentDiv>
-        <HeroSection />
-        <AboutProfessional />
-        <Servicos />
-        <AboutClinic />
-        <QualityNote />
-        <Contato />
-        <Footer />
+        <FadeInSection delay={0}>
+          <HeroSection />
+        </FadeInSection>
+
+        <FadeInSection delay={100}>
+          <AboutProfessional />
+        </FadeInSection>
+
+        <FadeInSection delay={200}>
+          <Servicos />
+        </FadeInSection>
+
+        <FadeInSection delay={100}>
+          <AboutClinic />
+        </FadeInSection>
+
+        <FadeInSection delay={200}>
+          <QualityNote />
+        </FadeInSection>
+
+        <FadeInSection delay={100}>
+          <Contato />
+        </FadeInSection>
+
+        <FadeInSection delay={200}>
+          <Footer />
+        </FadeInSection>
       </ContentDiv>
     </Container>
   );
