@@ -7,6 +7,7 @@ export const QualityNoteContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 40px;
 
   .description-quality {
     display: flex;

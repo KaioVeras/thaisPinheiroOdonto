@@ -6,6 +6,7 @@ export const ContatoContainer = styled.section`
   align-items: center;
   flex-direction: column;
   padding: 80px 30px;
+  scroll-margin-top: 40px;
 
   .description-contato {
     display: flex;

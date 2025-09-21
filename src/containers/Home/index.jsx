@@ -58,9 +58,7 @@ function Home() {
           <Contato />
         </FadeInSection>
 
-        <FadeInSection delay={200}>
-          <Footer />
-        </FadeInSection>
+        <Footer onScrollSection={handleScrollSection} />
       </ContentDiv>
     </Container>
   );

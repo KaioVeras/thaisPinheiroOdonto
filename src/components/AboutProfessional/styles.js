@@ -40,6 +40,8 @@ export const AboutProfessionalContainer = styled.section`
   }
 
    @media (max-width: 850px) {
+    scroll-margin-top: 100px;
+
     .container-professional {
       flex-direction: column;
       gap: 40px;

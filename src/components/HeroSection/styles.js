@@ -9,6 +9,7 @@ export const HeroSectionContainer = styled.section`
     height: 900px;
     width: 100%;
     padding: 0px 30px;
+    scroll-margin-top: 40px;
 
     .hero-content {
         max-width: 900px;

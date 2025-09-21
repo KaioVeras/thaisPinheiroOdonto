@@ -3,7 +3,7 @@ import { FooterContainer, DescriptionDoctor, FooterContent, FastLinks, Services,
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MapPin, Phone, Clock, Copyright } from 'lucide-react';
 
-function Footer() {
+function Footer({ onScrollSection }) {
     return (
         <FooterContainer>
             <FooterContent>
@@ -34,11 +34,24 @@ function Footer() {
 
                         <nav>
                             <ul>
-                                <li><a href="#">Início</a></li>
-                                <li><a href="#">Sobre</a></li>
-                                <li><a href="#">Serviços</a></li>
-                                <li><a href="#">Localização</a></li>
-                                <li><a href="#">Contato</a></li>
+                                <li>
+                                    <a onClick={() => onScrollSection('hero-section')}>Início</a>
+                                </li>
+                                <li>
+                                    <a onClick={() => onScrollSection('about')}>Sobre</a>
+                                </li>
+                                <li>
+                                    <a onClick={() => onScrollSection('services')}>Serviços</a>
+                                </li>
+                                <li>
+                                    <a onClick={() => onScrollSection('about-clinic')}>Clínica</a>
+                                </li>
+                                <li>
+                                    <a onClick={() => onScrollSection('quality')}>Clientes</a>
+                                </li>
+                                <li>
+                                    <a onClick={() => onScrollSection('contato')}>Contato</a>
+                                </li>
                             </ul>
                         </nav>
                     </FastLinks>
