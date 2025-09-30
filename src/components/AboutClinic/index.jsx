@@ -18,7 +18,7 @@ function AboutClinic() {
                             </div>
 
                             <div>
-                                <h4>Cuidado com o Paciente</h4>
+                                <h3>Cuidado com o Paciente</h3>
                                 <p>Sua saúde e conforto são nossa prioridade máxima.</p>
                             </div>
                         </div>
@@ -29,7 +29,7 @@ function AboutClinic() {
                             </div>
 
                             <div>
-                                <h4>Tecnologia Avançada</h4>
+                                <h3>Tecnologia Avançada</h3>
                                 <p>Equipamentos modernos para precisão nos tratamentos.</p>
                             </div>
                         </div>
@@ -40,7 +40,7 @@ function AboutClinic() {
                             </div>
 
                             <div>
-                                <h4>Segurança e Ética</h4>
+                                <h3>Segurança e Ética</h3>
                                 <p>Seguimos rigorosos padrões de ética profissional.</p>
                             </div>
                         </div>

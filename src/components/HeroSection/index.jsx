@@ -9,7 +9,7 @@ function HeroSection({ onScrollSection }) {
         <HeroSectionContainer id="hero-section">
             <div className="hero-content">
                 <div className="hero-title">
-                    <h1>Sorrir com saúde</h1><h1 className="hero-title-color">começa aqui</h1>
+                    <h2>Sorrir com saúde</h2><h2 className="hero-title-color">começa aqui</h2>
                 </div>
 
                 <p className="hero-description">Tratamento de canal com excelência, cuidado e responsabilidade. Preservamos a estrutura natural do seu dente com tecnologia avançada e atendimento humanizado.</p>
@@ -21,7 +21,7 @@ function HeroSection({ onScrollSection }) {
                         </div>
 
                         <div>
-                            <h4>Segurança</h4>
+                            <h3>Segurança</h3>
                             <p>Protocolos rigorosos</p>
                         </div>
                     </HeroCard>
@@ -32,7 +32,7 @@ function HeroSection({ onScrollSection }) {
                         </div>
 
                         <div>
-                            <h4>Cuidado</h4>
+                            <h3>Cuidado</h3>
                             <p>Suporte humanizado</p>
                         </div>
                     </HeroCard>
@@ -43,7 +43,7 @@ function HeroSection({ onScrollSection }) {
                         </div>
 
                         <div>
-                            <h4>Excelência</h4>
+                            <h3>Excelência</h3>
                             <p>Resultados Superiores</p>
                         </div>
                     </HeroCard>

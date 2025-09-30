@@ -77,8 +77,9 @@ export const DescriptionClinic = styled.div`
     color: #4b5563;
   }
 
-  h4 {
+  h3 {
     color: #1f2937;
+    font-size: 16px;
   }
 
   @media (max-width: 1050px) {
