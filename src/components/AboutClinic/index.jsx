@@ -7,7 +7,7 @@ function AboutClinic() {
         <AboutClinicContainer id='about-clinic'>
             <div className='container-clinic'>
                 <DescriptionClinic>
-                    <h1>Nossa Clínica</h1>
+                    <h2>Nossa Clínica</h2>
                     <p className='paragraph-title'>Um ambiente que une tecnologia e acolhimento.</p>
                     <p>Nosso consultório foi projetado para oferecer o melhor em saúde bucal, com equipamentos de última geração e um ambiente acolhedor. Estamos comprometidos em transformar sua visita ao dentista em uma experiência tranquila e positiva.</p>
 

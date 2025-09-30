@@ -9,7 +9,7 @@ function HeroSection({ onScrollSection }) {
         <HeroSectionContainer id="hero-section">
             <div className="hero-content">
                 <div className="hero-title">
-                    <h2>Sorrir com saúde</h2><h2 className="hero-title-color">começa aqui</h2>
+                    <h1>Sorrir com saúde</h1><h1 className="hero-title-color">começa aqui</h1>
                 </div>
 
                 <p className="hero-description">Tratamento de canal com excelência, cuidado e responsabilidade. Preservamos a estrutura natural do seu dente com tecnologia avançada e atendimento humanizado.</p>

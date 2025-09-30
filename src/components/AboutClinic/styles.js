@@ -64,8 +64,9 @@ export const DescriptionClinic = styled.div`
   flex-direction: column;
   gap: 20px;
 
-  h1 {
+  h2 {
     color: #4d9388;
+    font-size: 30px;
   }
 
   .paragraph-title {
