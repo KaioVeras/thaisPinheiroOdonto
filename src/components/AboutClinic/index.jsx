@@ -49,7 +49,12 @@ function AboutClinic() {
                     </ContainerList>
                 </DescriptionClinic>
 
-                <img src='https://storage.googleapis.com/thais-odonto-imagens/consultorio.webp' alt='Imagem da clínica' className='image-clinic' />
+                <img 
+                    src='https://storage.googleapis.com/thais-odonto-imagens/consultorio.webp' 
+                    alt='Imagem da clínica' 
+                    className='image-clinic'
+                    loading='lazy'
+                />
             </div>
         </AboutClinicContainer>
     );
