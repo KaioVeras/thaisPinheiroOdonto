@@ -4,3 +4,30 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  /* Caminho corrigido: removido o /public */
+  src: url('/fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  /* Caminho corrigido: removido o /public */
+  src: url('/fonts/poppins-v24-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  /* Caminho corrigido: removido o /public */
+  src: url('/fonts/poppins-v24-latin-700.woff2') format('woff2');
+}

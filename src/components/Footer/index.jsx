@@ -35,22 +35,22 @@ function Footer({ onScrollSection }) {
                         <nav>
                             <ul>
                                 <li>
-                                    <a onClick={() => onScrollSection('hero-section')}>Início</a>
+                                    <a href="#hero-section" onClick={(e) => { e.preventDefault(); onScrollSection('hero-section'); }}>Início</a>
                                 </li>
                                 <li>
-                                    <a onClick={() => onScrollSection('about')}>Sobre</a>
+                                    <a href="#about" onClick={(e) => { e.preventDefault(); onScrollSection('about'); }}>Sobre</a>
                                 </li>
                                 <li>
-                                    <a onClick={() => onScrollSection('services')}>Serviços</a>
+                                    <a href="#services" onClick={(e) => { e.preventDefault(); onScrollSection('services'); }}>Serviços</a>
                                 </li>
                                 <li>
-                                    <a onClick={() => onScrollSection('about-clinic')}>Clínica</a>
+                                    <a href="#about-clinic" onClick={(e) => { e.preventDefault(); onScrollSection('about-clinic'); }}>Clínica</a>
                                 </li>
                                 <li>
-                                    <a onClick={() => onScrollSection('quality')}>Clientes</a>
+                                    <a href="#quality" onClick={(e) => { e.preventDefault(); onScrollSection('quality'); }}>Clientes</a>
                                 </li>
                                 <li>
-                                    <a onClick={() => onScrollSection('contato')}>Contato</a>
+                                    <a href="#contato" onClick={(e) => { e.preventDefault(); onScrollSection('contato'); }}>Contato</a>
                                 </li>
                             </ul>
                         </nav>
@@ -98,12 +98,7 @@ function Footer({ onScrollSection }) {
             <Line>{/** Linha de separação */}</Line>
 
             <CopyRight>
-                <p><Copyright size={12} /> 2025 Thaís Pinheiro Odontologia. Todos os direitos reservados.</p>
-
-                <div className='terms'>
-                    <p>Política de Privacidade</p>
-                    <p>Termos de Uso</p>
-                </div>
+                <p><Copyright size={12} /> 2025 Thaís Pinheiro Odontologia | CRO-DF 8454. Todos os direitos reservados.</p>
             </CopyRight>
         </FooterContainer>
     );
