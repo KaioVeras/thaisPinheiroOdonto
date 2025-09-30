@@ -32,6 +32,7 @@ export const NavBar = styled.nav`
     li a {
         color: #4b5563;
         cursor: pointer;
+        text-decoration: none;
 
         &:hover {
             color: #4d9388;
