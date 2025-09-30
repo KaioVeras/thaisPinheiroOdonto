@@ -6,7 +6,7 @@ import { TbDentalBroken, TbDental } from "react-icons/tb";
 function Servicos() {
     return (
         <ServicosContainer id='services'>
-            <h1>Nossos Serviços</h1>
+            <h2>Nossos Serviços</h2>
             <p className='descricao'>Oferecemos um cuidado completo para a sua saúde bucal, com foco em tratamentos eficazes e bem-estar.</p>
 
             <ContainerCards>
