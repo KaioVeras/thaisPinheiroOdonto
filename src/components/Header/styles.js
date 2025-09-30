@@ -74,13 +74,22 @@ export const NavBar = styled.nav`
   ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 10px;
   }
 
   li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 8px 12px;
+    border-radius: 6px;
+
     text-decoration: none;
     color: #4b5563;
-    cursor: pointer; 
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3 ease;
 
     &:hover {
       color: #4d9388;

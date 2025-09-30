@@ -35,7 +35,7 @@ function Home() {
 
       <ContentDiv>
         <FadeInSection delay={0}>
-          <HeroSection />
+          <HeroSection onScrollSection={handleScrollSection}/>
         </FadeInSection>
 
         <FadeInSection delay={100}>

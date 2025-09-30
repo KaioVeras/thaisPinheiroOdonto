@@ -257,3 +257,59 @@ export const CopyRight = styled.div`
         width: 100%;
     }
 `;
+
+export const Social = styled.div`
+    h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #374151;
+    }
+
+    div {
+        display: flex;
+        gap: 16px;
+
+        a {
+            /* Garante área de toque mínima para os ícones */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            color: #4D9388;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #f0fdfa;
+            }
+        }
+    }
+`;
+
+export const Copyright = styled.div`
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+
+    p {
+        color: #6b7280;
+        font-size: 14px;
+    }
+
+    a {
+        /* Garante área de toque para o link de créditos */
+        display: inline-flex;
+        align-items: center;
+        min-height: 48px;
+        padding: 4px 8px;
+        border-radius: 4px;
+
+        color: #4D9388;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+`;

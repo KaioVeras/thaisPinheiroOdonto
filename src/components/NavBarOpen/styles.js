@@ -27,15 +27,30 @@ export const NavBar = styled.nav`
         flex-direction: column;
         gap: 15px;
         align-items: flex-start;
+        width: 100%;
+    }
+
+    li {
+        width: 100%;
     }
 
     li a {
+        /* Garante área de toque mínima */
+        display: inline-flex;
+        align-items: center;
+        min-height: 48px;
+        width: 100%;
+        padding: 8px 12px;
+        border-radius: 6px;
+        
         color: #4b5563;
         cursor: pointer;
         text-decoration: none;
+        transition: color 0.3s, background-color 0.3s;
 
         &:hover {
             color: #4d9388;
+            background-color: #f0fdfa;
         }
     }
 `;

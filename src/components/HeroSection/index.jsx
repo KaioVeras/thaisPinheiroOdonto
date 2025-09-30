@@ -1,10 +1,10 @@
-import { HeroSectionContainer, HeroCard } from "./styles";
+import { HeroSectionContainer, HeroCard, ButtonServices } from "./styles";
 import { Shield, Heart, Award, MessageCircle } from 'lucide-react';
 
 import SecondaryButton from "../SecondaryButton";
 import PrimaryButton from "../PrimaryButton";
 
-function HeroSection() {
+function HeroSection({ onScrollSection }) {
     return (
         <HeroSectionContainer id="hero-section">
             <div className="hero-content">
@@ -59,13 +59,9 @@ function HeroSection() {
                         radius="30px"
                     />
 
-                    <PrimaryButton
-                        label="Saiba mais sobre nossos serviços"
-                        width="360px"
-                        height="48px"
-                        link="#"
-                        radius="30px"
-                    />
+                    <ButtonServices onClick={() => onScrollSection('services')}>
+                        Saiba mais sobre nossos serviços
+                    </ButtonServices>
                 </div>
             </div>
         </HeroSectionContainer>

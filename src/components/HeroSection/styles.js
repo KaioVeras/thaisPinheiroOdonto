@@ -123,3 +123,20 @@ export const HeroCard = styled.div`
         gap: 0px;
     }
 `;
+
+export const ButtonServices = styled.button`
+    width: 360px;
+    height: 48px;
+    border-radius: 30px;
+    border: 1px solid #4D9388;
+    background-color: transparent;
+    color: #4D9388;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: #4D9388;
+        color: #fff;
+    }
+`;
