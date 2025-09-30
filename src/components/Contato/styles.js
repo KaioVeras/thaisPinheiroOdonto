@@ -14,7 +14,7 @@ export const ContatoContainer = styled.section`
     flex-direction: column;
     gap: 20px;
 
-    h1 {
+    h2 {
       color: #4b9388;
       font-size: 34px;
     }
@@ -118,7 +118,8 @@ export const Content = styled.div`
       color: red;
     }
 
-    h4 {
+    h3 {
+      font-size: 16px;
       color: #1f2937;
     }
 
@@ -167,9 +168,10 @@ export const TimeContent = styled.div`
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 
-    h4 {
+    h3 {
       color: #1f2937;
       margin-bottom: 8px;
+      font-size: 16px;
     }
 
     p {

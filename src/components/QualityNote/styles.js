@@ -15,7 +15,7 @@ export const QualityNoteContainer = styled.section`
     align-items: center;
     gap: 20px;
 
-    h1 {
+    h2 {
       color: #4b9388;
       font-size: 34px;
       word-wrap: break-word;
@@ -80,8 +80,9 @@ export const Card = styled.div`
     align-self: flex-start;
     text-align: left;
 
-    h4 {
+    h3 {
       color: #1b2937;
+      font-size: 16px;
     }
 
     p {

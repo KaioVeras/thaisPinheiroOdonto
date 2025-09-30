@@ -7,7 +7,7 @@ function Contato() {
     return (
         <ContatoContainer id='contato'>
             <div className='description-contato'>
-                <h1>Entre em Contato</h1>
+                <h2>Entre em Contato</h2>
                 <p>Estamos prontos para cuidar da sua saúde bucal. Entre em contato conosco e agende sua consulta.</p>
             </div>
 
@@ -17,7 +17,7 @@ function Contato() {
                         <Content>
                             <MapPin size={24} className='icon-map' />
                             <div className='content-item'>
-                                <h4>Endereço</h4>
+                                <h3>Endereço</h3>
                                 <p>Av. Pau Brasil, 10 - Águas Claras, Brasília - DF, 71926-000</p>
                             </div>
                         </Content>
@@ -25,7 +25,7 @@ function Contato() {
                         <Content>
                             <Phone size={24} className='icon' />
                             <div className='content-item'>
-                                <h4>Telefone</h4>
+                                <h3>Telefone</h3>
                                 <p>(61) 3550-6324</p>
                             </div>
                         </Content>
@@ -33,7 +33,7 @@ function Contato() {
                         <Content>
                             <FaInstagram size={24} className='icon' />
                             <div className='content-item'>
-                                <h4>Instagram</h4>
+                                <h3>Instagram</h3>
                                 <p>@thais_pinheiro_odontologia</p>
                             </div>
                         </Content>
@@ -41,13 +41,13 @@ function Contato() {
 
                     <TimeContent>
                         <div className='card-time'>
-                            <h4>Horários de Atendimento</h4>
+                            <h3>Horários de Atendimento</h3>
                             <p>Segunda a Sexta: 8:30h - 16h</p>
                             <p>Sábado e Domingo: Fechado</p>
                         </div>
 
                         <div className='card-time'>
-                            <h4>Convênios</h4>
+                            <h3>Convênios</h3>
                             <p>Amil Dental</p>
                         </div>
                     </TimeContent>

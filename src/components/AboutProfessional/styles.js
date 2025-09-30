@@ -69,7 +69,7 @@ export const ContentProfessional = styled.div`
   text-align: left;
   padding: 0 30px;
 
-  h1 {
+  h2 {
     font-size: 30px;
     color: #4d9388;
     margin-bottom: 16px;

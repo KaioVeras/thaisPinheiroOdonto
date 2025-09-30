@@ -7,7 +7,7 @@ function QualityNote() {
     return (
         <QualityNoteContainer id='quality'>
             <div className='description-quality'>
-                <h1>O que nossos pacientes dizem</h1>
+                <h2>O que nossos pacientes dizem</h2>
                 <p>A satisfação dos nossos pacientes é nossa maior recompensa. Veja alguns depoimentos de quem confia em nosso trabalho.</p>
             </div>
 
@@ -28,7 +28,7 @@ function QualityNote() {
                     <p className='coment'>"Uma baita profissional! Muito atenciosa e vai explicando cada passo dos procedimentos! Recomendo demais..."</p>
 
                     <div className='author'>
-                        <h4>Vinicius Nunes</h4>
+                        <h3>Vinicius Nunes</h3>
                         <p>Via Google</p>
                     </div>
                 </Card>
@@ -49,7 +49,7 @@ function QualityNote() {
                     <p className='coment'>"Drª Thais uma Profissional nota mil !!! Super recomendo. Zero dor, muito menos desconforto!"</p>
 
                     <div className='author'>
-                        <h4>Jaime Guimaraes</h4>
+                        <h3>Jaime Guimaraes</h3>
                         <p>Via Google</p>
                     </div>
                 </Card>
@@ -70,7 +70,7 @@ function QualityNote() {
                     <p className='coment'>"A Doutora Thais é uma excelente profissional. Ela ensina todos os passos do procedimento, isso tranquiliza o paciente."</p>
 
                     <div className='author'>
-                        <h4>João Paulo</h4>
+                        <h3>João Paulo</h3>
                         <p>Via Google</p>
                     </div>
                 </Card>
@@ -91,7 +91,7 @@ function QualityNote() {
                     <p className='coment'>"Uma excelente profissional! Amei o atendimento, tudo sem dor. Atendimento humanizado, super indico!!!"</p>
 
                     <div className='author'>
-                        <h4>Iona Nascimento</h4>
+                        <h3>Iona Nascimento</h3>
                         <p>Via Google</p>
                     </div>
                 </Card>

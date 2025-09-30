@@ -15,7 +15,7 @@ function AboutProfessional() {
                 />
 
                 <ContentProfessional>
-                    <h1>Dra. Thaís Pinheiro</h1>
+                    <h2>Dra. Thaís Pinheiro</h2>
                     <h3>Cirurgiã-Dentista, Especialista em Endodontia</h3>
 
                     <div className="paragraphs">
