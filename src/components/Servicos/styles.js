@@ -25,7 +25,7 @@ export const ServicosContainer = styled.section`
   .secondary-button-mobile {
     width: 355px;
     height: 47px;
-    background-color: #4D9388;
+    background-color: #4d9388;
     border: none;
     border-radius: 4px;
     transition: all 0.3s;
@@ -42,15 +42,15 @@ export const ServicosContainer = styled.section`
     }
 
     &:hover {
-      background-color: #5BA49A;
+      background-color: #5ba49a;
     }
   }
 
   @media (max-width: 740px) {
-      .secondary-button-mobile {
-        width: 100%;
-      }
+    .secondary-button-mobile {
+      width: 100%;
     }
+  }
 `;
 
 export const ContainerCards = styled.div`
@@ -83,16 +83,16 @@ export const ContainerCards = styled.div`
     }
 
     p {
-        color: #4b5563;
+      color: #4b5563;
     }
 
     &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(-10px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
-        h3 {
-            color: #4d9388;
-        }
+      h3 {
+        color: #4d9388;
+      }
     }
   }
 
@@ -106,23 +106,23 @@ export const ContainerCards = styled.div`
     justify-content: center;
   }
 
-    @media (max-width: 1083px) {
-      .card {
-        width: 40%;
-        min-width: 316px;
-      }
+  @media (max-width: 1083px) {
+    .card {
+      width: 40%;
+      min-width: 316px;
     }
+  }
 
-    @media (max-width: 740px) {
-      .card {
-        width: 100%;
-        height: 240px;
-      }
+  @media (max-width: 740px) {
+    .card {
+      width: 100%;
+      height: 240px;
     }
+  }
 
-    @media (max-width: 500px) {
-      .card {
-        height: 294px;
-      }
+  @media (max-width: 500px) {
+    .card {
+      height: 294px;
     }
+  }
 `;

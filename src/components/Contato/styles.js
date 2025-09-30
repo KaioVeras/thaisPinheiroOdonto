@@ -29,13 +29,13 @@ export const ContatoContainer = styled.section`
 
   @media (max-width: 650px) {
     .description-contato {
-        h1 {
-            font-size: 30px;
-        }
+      h1 {
+        font-size: 30px;
+      }
 
-        p {
-            width: 100%;
-        }
+      p {
+        width: 100%;
+      }
     }
   }
 `;
@@ -104,7 +104,8 @@ export const Content = styled.div`
   display: flex;
   gap: 20px;
 
-  .icon, .icon-map {
+  .icon,
+  .icon-map {
     color: #4b9388;
     margin-top: 3px;
   }
