@@ -73,52 +73,32 @@ export const ContainerLogo = styled.div`
 export const NavBar = styled.nav`
   ul {
     display: flex;
-    gap: 12px; /* separa alvos adjacentes */
+    list-style: none;
+    gap: 20px;
   }
-  a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 48px;          /* alvo mínimo */
-    padding: 12px 14px;        /* aumenta a área de toque */
-    border-radius: 8px;
-  }
-  @media (max-width: 768px) {
-    ul { gap: 10px; }
-    a { min-height: 48px; width: 100%; }
+
+  li a {
+    text-decoration: none;
+    color: #4b5563;
+    cursor: pointer; 
+
+    &:hover {
+      color: #4d9388;
+    }
   }
 `;
 
 export const ContainerButtons = styled.div`
   display: flex;
-  align-items: center;
-  gap: 12px;
-
-  > a, > button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 48px;
-    min-height: 48px;
-    padding: 12px 16px;
-    border-radius: 10px;
-  }
+  gap: 10px;
 `;
 
 export const MobileButton = styled.button`
-  display: inline-flex;
+  display: none;
+  color: #4d9388;
   align-items: center;
   justify-content: center;
-  min-width: 48px;
-  min-height: 48px;
-  padding: 12px;
-  border-radius: 10px;
-
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-
-  &:focus-visible {
-    outline: 2px solid currentColor;
-    outline-offset: 2px;
-  }
+  border: none;
+  background: none;
+  cursor: pointer;
 `;
