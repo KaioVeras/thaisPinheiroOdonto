@@ -232,8 +232,18 @@ export const Line = styled.div`
 
 export const CopyRight = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 77%;
+
+    .terms {
+        display: flex;
+        gap: 15px;
+
+        p:hover {
+            color: #4b9388;
+            cursor: pointer;
+        }
+    }
 
     p {
         color: #9ca3af;
@@ -241,8 +251,9 @@ export const CopyRight = styled.div`
     }
 
     @media (max-width: 1025px) {
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        gap: 15px;
         width: 100%;
     }
 `;

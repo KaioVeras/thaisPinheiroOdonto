@@ -98,7 +98,12 @@ function Footer({ onScrollSection }) {
             <Line>{/** Linha de separação */}</Line>
 
             <CopyRight>
-                <p><Copyright size={12} /> 2025 Thaís Pinheiro Odontologia | CRO-DF 8454. Todos os direitos reservados.</p>
+                <p><Copyright size={12} /> 2025 Thaís Pinheiro Odontologia. Todos os direitos reservados.</p>
+
+                <div className='terms'>
+                    <p>Política de Privacidade</p>
+                    <p>Termos de Uso</p>
+                </div>
             </CopyRight>
         </FooterContainer>
     );
