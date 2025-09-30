@@ -68,12 +68,7 @@ function Header({ onScrollSection }) {
                     />
                 </ContainerButtons>
 
-                <MobileButton 
-                    className='mobile-button' 
-                    onClick={toggleMenu}
-                    aria-label={isOpenMenu ? "Fechar menu" : "Abrir menu"}
-                >
-                    
+                <MobileButton className='mobile-button' onClick={toggleMenu}>
                     {isOpenMenu ? <IoClose size={26} /> : <FiMenu size={24} />}
                 </MobileButton>
             </div>
