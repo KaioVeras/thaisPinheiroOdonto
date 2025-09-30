@@ -1,18 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 
-// Habilita tree-shaking recomendado e remove console/debugger no build
+// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  esbuild: {
-    drop: ["console", "debugger"],
-    pure: ["console.info", "console.debug", "console.warn"],
-  },
-  build: {
-    sourcemap: false,
-    target: "es2018",
-    rollupOptions: {
-      treeshake: "recommended",
-    },
-  },
+  plugins: [react(), tailwindcss()],
 });
