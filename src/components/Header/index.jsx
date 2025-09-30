@@ -1,8 +1,6 @@
 import { Container, ContainerLogo, NavBar, ContainerButtons, MobileButton } from './styles';
 import { useState } from "react";
 
-import { useMenuStore } from '../../store/menuStore'; 
-
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
