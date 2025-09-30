@@ -103,7 +103,7 @@ export const HeroCard = styled.div`
         font-size: 14px;
     }
 
-    h3 {
+    h2 {
         font-size: 16px;
         color: #111827;
     }

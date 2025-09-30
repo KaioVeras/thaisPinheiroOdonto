@@ -21,7 +21,7 @@ function HeroSection({ onScrollSection }) {
                         </div>
 
                         <div>
-                            <h3>Segurança</h3>
+                            <h2>Segurança</h2>
                             <p>Protocolos rigorosos</p>
                         </div>
                     </HeroCard>
@@ -32,7 +32,7 @@ function HeroSection({ onScrollSection }) {
                         </div>
 
                         <div>
-                            <h3>Cuidado</h3>
+                            <h2>Cuidado</h2>
                             <p>Suporte humanizado</p>
                         </div>
                     </HeroCard>
@@ -43,7 +43,7 @@ function HeroSection({ onScrollSection }) {
                         </div>
 
                         <div>
-                            <h3>Excelência</h3>
+                            <h2>Excelência</h2>
                             <p>Resultados Superiores</p>
                         </div>
                     </HeroCard>
