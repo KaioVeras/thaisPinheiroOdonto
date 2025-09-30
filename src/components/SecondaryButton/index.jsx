@@ -1,11 +1,20 @@
-import { SecondaryButtonStyle } from "./styles";
+import { Button } from "./styles";
 
-function SecondaryButton({ label, width, height, link, radius, fontSize }) {
+function SecondaryButton({ label, link, $width, $height, $radius, $fontSize, ...props }) {
+  const common = { $width, $height, $radius, $fontSize, ...props };
+
+  if (link) {
     return (
-        <SecondaryButtonStyle width={width} height={height} radius={radius} fontSize={fontSize}>
-            <a href={link} target="_blank">{label}</a>
-        </SecondaryButtonStyle>
+      <Button as="a" href={link} target="_blank" rel="noopener noreferrer" {...common}>
+        {label}
+      </Button>
     );
+  }
+  return (
+    <Button type="button" {...common}>
+      {label}
+    </Button>
+  );
 }
 
 export default SecondaryButton;
