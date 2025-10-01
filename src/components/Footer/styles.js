@@ -230,7 +230,7 @@ export const Line = styled.div`
 
 export const CopyRight = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 77%;
 
   .terms {
@@ -281,33 +281,6 @@ export const Social = styled.div`
       &:hover {
         background-color: #f0fdfa;
       }
-    }
-  }
-`;
-
-export const Copyright = styled.div`
-  border-top: 1px solid #e5e7eb;
-  text-align: center;
-
-  p {
-    color: #6b7280;
-    font-size: 14px;
-  }
-
-  a {
-    /* Garante área de toque para o link de créditos */
-    display: inline-flex;
-    align-items: center;
-    min-height: 48px;
-    padding: 4px 8px;
-    border-radius: 4px;
-
-    color: #4d9388;
-    text-decoration: none;
-    font-weight: 500;
-
-    &:hover {
-      text-decoration: underline;
     }
   }
 `;
