@@ -12,7 +12,7 @@ import styled from 'styled-components';
     z-index: 10;
     background-color: #fff;
 
-    @media (min-width: 1150px) {
+    @media (min-width: 1190px) {
         display: none;
     }
 `;

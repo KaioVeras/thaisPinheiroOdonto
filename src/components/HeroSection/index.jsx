@@ -54,9 +54,9 @@ function HeroSection({ onScrollSection }) {
                     <SecondaryButton
                         label="Agende sua consulta"
                         link="https://wa.me/556135506324"
-                        $width="280px"
-                        $height="48px"
-                        $radius="30px"
+                        width="280px"
+                        height="48px"
+                        radius="30px"
                     />
 
                     <ButtonServices onClick={() => onScrollSection('services')}>

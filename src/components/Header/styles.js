@@ -22,7 +22,7 @@ export const Container = styled.header`
     justify-content: space-between;
   }
 
-  @media (max-width: 1150px) {
+  @media (max-width: 1190px) {
     nav {
       display: none;
     }
@@ -74,7 +74,6 @@ export const NavBar = styled.nav`
   ul {
     display: flex;
     list-style: none;
-    gap: 10px;
   }
 
   li a {
