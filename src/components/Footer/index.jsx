@@ -20,12 +20,22 @@ function Footer({ onScrollSection }) {
                         <p>Cuidamos da sua saúde bucal com excelência, dedicação e carinho. Tratamentos especializados em endodontia com tecnologia de ponta.</p>
 
                         <div className='container-icons'>
-                            <a href='https://www.instagram.com/thais_pinheiro_odontologia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank' alt="Link para Instagram">
+                            <a 
+                                href='https://www.instagram.com/thais_pinheiro_odontologia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' 
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                aria-label='Acessar Instagram de Thaís Pineheiro Odontologia'
+                            >
                                 <div className='icons'>
                                     <FaInstagram color='#fff' size={18} />
                                 </div>
                             </a>
-                            <a href='https://wa.me/556135506324' target='_blank' alt="Link para WhatsApp">
+                            <a 
+                                href='https://wa.me/556135506324' 
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                aria-label="Entrar em contato via WhatsApp com Thaís Pinheiro Odontologia"
+                            >
                                 <div className='icons'>
                                     <FaWhatsapp color='#fff' size={18} />
                                 </div>
