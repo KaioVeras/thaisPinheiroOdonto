@@ -100,9 +100,10 @@ export const ContainerContent = styled.div`
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled.a`
   display: flex;
   gap: 20px;
+  text-decoration: none;
 
   .icon,
   .icon-map {
@@ -128,7 +129,7 @@ export const Content = styled.div`
     }
 
     &:hover {
-      h4 {
+      h3 {
         color: #4b9388;
       }
     }

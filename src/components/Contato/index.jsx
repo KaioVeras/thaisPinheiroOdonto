@@ -14,7 +14,7 @@ function Contato() {
             <ContainerContent>
                 <ContatoContent>
                     <div className='dados-content'>
-                        <Content>
+                        <Content href="https://maps.app.goo.gl/aUiMSw4NuyBJYmf39" target="_blank" rel="noopener noreferrer" aria-label="Ver localização no Google Maps">
                             <MapPin size={24} className='icon-map' />
                             <div className='content-item'>
                                 <h3>Endereço</h3>
@@ -22,7 +22,7 @@ function Contato() {
                             </div>
                         </Content>
 
-                        <Content>
+                        <Content href="https://wa.me/556135506324" target='_blank' rel='noopener noreferrer' aria-label="Ligar para Thaís Pinheiro Odontologia">
                             <Phone size={24} className='icon' />
                             <div className='content-item'>
                                 <h3>Telefone</h3>
@@ -30,7 +30,7 @@ function Contato() {
                             </div>
                         </Content>
 
-                        <Content>
+                        <Content href='https://www.instagram.com/thais_pinheiro_odontologia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank' rel='noopener noreferrer' aria-label="Acessar Instagram de Thaís Pinheiro Odontologia">
                             <FaInstagram size={24} className='icon' />
                             <div className='content-item'>
                                 <h3>Instagram</h3>
