@@ -4,6 +4,14 @@ import { FaInstagram } from 'react-icons/fa';
 import { MapPin, Phone } from 'lucide-react';
 
 function Contato() {
+    // Detecta se é um dispositivo móvel
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    // Define o link apropriado baseado no dispositivo
+    const mapLink = isMobile 
+        ? "geo:-15.8405537,-48.0298510?q=Av.+Pau+Brasil,+10+-+Águas+Claras,+Brasília+-+DF,+71926-000"
+        : "https://maps.app.goo.gl/aUiMSw4NuyBJYmf39";
+
     return (
         <ContatoContainer id='contato'>
             <div className='description-contato'>
@@ -14,7 +22,12 @@ function Contato() {
             <ContainerContent>
                 <ContatoContent>
                     <div className='dados-content'>
-                        <Content href="https://maps.app.goo.gl/aUiMSw4NuyBJYmf39" target="_blank" rel="noopener noreferrer" aria-label="Ver localização no Google Maps">
+                        <Content 
+                            href={mapLink} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-label="Abrir localização no mapa"
+                        >
                             <MapPin size={24} className='icon-map' />
                             <div className='content-item'>
                                 <h3>Endereço</h3>
@@ -22,7 +35,7 @@ function Contato() {
                             </div>
                         </Content>
 
-                        <Content href="https://wa.me/556135506324" target='_blank' rel='noopener noreferrer' aria-label="Ligar para Thaís Pinheiro Odontologia">
+                        <Content href="https://wa.me/556135506324" target='_blank' rel='noopener noreferrer' aria-label="Entrar em contato via WhatsApp">
                             <Phone size={24} className='icon' />
                             <div className='content-item'>
                                 <h3>Telefone</h3>
@@ -60,13 +73,12 @@ function Contato() {
                         height="450"
                         style={{ border: 0 }}
                         allowFullScreen={true}
+                        loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                         title="Localização da clínica no Google Maps"
                     ></iframe>
                 </div>
             </ContainerContent>
-
-
         </ContatoContainer>
     );
 }
