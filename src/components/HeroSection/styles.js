@@ -144,4 +144,12 @@ export const ButtonServices = styled.button`
         background-color: #4D9388;
         color: #fff;
     }
+
+    @media (max-width: 700px) {
+        width: 90%;
+    }
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 `;

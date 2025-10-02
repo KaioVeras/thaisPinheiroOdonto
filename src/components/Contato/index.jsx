@@ -59,10 +59,9 @@ function Contato() {
                         width="600"
                         height="450"
                         style={{ border: 0 }}
-                        allowFullScreen=""
-                        loading="lazy"
+                        allowFullScreen={true}
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="Mapa do consultório"
+                        title="Localização da clínica no Google Maps"
                     ></iframe>
                 </div>
             </ContainerContent>
