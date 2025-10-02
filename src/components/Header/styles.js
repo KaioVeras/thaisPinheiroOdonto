@@ -37,10 +37,11 @@ export const Container = styled.header`
   }
 `;
 
-export const ContainerLogo = styled.div`
+export const ContainerLogo = styled.a`
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
 
   img {
     width: 45px;
@@ -49,6 +50,7 @@ export const ContainerLogo = styled.div`
 
   .logo-text h1 {
     font-size: 20px;
+    color: #1f2937;
   }
 
   .logo-text p {

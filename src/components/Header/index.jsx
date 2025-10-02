@@ -22,7 +22,7 @@ function Header({ onScrollSection }) {
     return (
         <Container>
             <div className='header-content'>
-                <ContainerLogo>
+                <ContainerLogo href="#hero-section" onClick={(e) => handleClick(e, 'hero-section')}>
                     <img src="https://storage.googleapis.com/thais-odonto-imagens/logoThaisOdonto.svg" alt
                         ="Logo Thais Pinheiro Odontologia" />
 
