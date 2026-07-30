@@ -1,35 +1,34 @@
 import { useState, useEffect, useRef } from 'react';
 
-export const useInView = (options = {}) => {
+export const useInView = () => {
   const [isInView, setIsInView] = useState(false);
-  const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef();
 
   useEffect(() => {
+    const element = ref.current;
+
+    if (!element || !('IntersectionObserver' in window)) {
+      setIsInView(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated) {
+        if (entry.isIntersecting) {
           setIsInView(true);
-          setHasAnimated(true);
+          observer.disconnect();
         }
       },
       {
         threshold: 0.1,
         rootMargin: '-50px',
-        ...options,
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    observer.observe(element);
 
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, [hasAnimated, options]);
+    return () => observer.disconnect();
+  }, []);
 
   return [ref, isInView];
 };

@@ -25,24 +25,20 @@ export const ServicosContainer = styled.section`
   .secondary-button-mobile {
     width: 355px;
     height: 47px;
-    background-color: #4d9388;
+    background-color: #35776e;
     border: none;
     border-radius: 4px;
     transition: all 0.3s;
     cursor: pointer;
-
-    a {
-      text-decoration: none;
-      color: #fff;
-      height: 100%;
-      font-size: 14px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
-      background-color: #5ba49a;
+      background-color: #285f57;
     }
   }
 
@@ -116,6 +112,7 @@ export const ContainerCards = styled.div`
   @media (max-width: 740px) {
     .card {
       width: 100%;
+      min-width: 0;
       height: 240px;
     }
   }
@@ -123,6 +120,16 @@ export const ContainerCards = styled.div`
   @media (max-width: 500px) {
     .card {
       height: 294px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card {
+      transition: none;
+
+      &:hover {
+        transform: none;
+      }
     }
   }
 `;

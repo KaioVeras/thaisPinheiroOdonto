@@ -11,8 +11,10 @@ import styled from 'styled-components';
     left: 0;
     z-index: 10;
     background-color: #fff;
+    max-height: 100dvh;
+    overflow-y: auto;
 
-    @media (min-width: 1190px) {
+    @media (min-width: 1191px) {
         display: none;
     }
 `;
@@ -49,7 +51,7 @@ export const NavBar = styled.nav`
         transition: color 0.3s, background-color 0.3s;
 
         &:hover {
-            color: #4d9388;
+            color: #35776e;
             background-color: #f0fdfa;
         }
     }
@@ -57,6 +59,8 @@ export const NavBar = styled.nav`
 
 export const ContainerButtons = styled.div`
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     margin-top: 15px;
 `;

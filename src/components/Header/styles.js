@@ -48,18 +48,20 @@ export const ContainerLogo = styled.a`
     height: 45px;
   }
 
-  .logo-text h1 {
+  .logo-text .brand-name {
+    display: block;
     font-size: 20px;
+    font-weight: 700;
     color: #1f2937;
   }
 
   .logo-text p {
     font-size: 14px;
-    color: #4d9388;
+    color: #35776e;
   }
 
   @media (max-width: 1150px) {
-    .logo-text h1 {
+    .logo-text .brand-name {
       font-size: 18px;
     }
   }
@@ -68,6 +70,15 @@ export const ContainerLogo = styled.a`
     img {
       width: 40px;
       height: 40px;
+    }
+
+    .logo-text .brand-name {
+      font-size: 0;
+    }
+
+    .logo-text .brand-name::after {
+      content: "Thaís Pinheiro Odonto";
+      font-size: 18px;
     }
   }
 `;
@@ -93,7 +104,7 @@ export const NavBar = styled.nav`
     transition: 0.3 ease;
 
     &:hover {
-      color: #4d9388;
+      color: #35776e;
     }
   }
 `;
@@ -111,4 +122,6 @@ export const MobileButton = styled.button`
   border: none;
   background: none;
   cursor: pointer;
+  width: 48px;
+  height: 48px;
 `;

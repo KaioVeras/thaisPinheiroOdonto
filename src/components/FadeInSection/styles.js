@@ -5,4 +5,10 @@ export const AnimatedContainer = styled.div`
   transform: translateY(${props => props.isVisible ? '0' : '30px'});
   transition: all 0.6s ease-out;
   transition-delay: ${props => props.delay}ms;
+
+  @media (prefers-reduced-motion: reduce) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 `;

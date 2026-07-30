@@ -88,13 +88,15 @@ export const DescriptionDoctor = styled.div`
     align-items: center;
     gap: 10px;
 
-    h3 {
+    .brand-name {
+      display: block;
       font-size: 20px;
+      font-weight: 700;
       color: #fff;
     }
 
     p {
-      color: #4b9388;
+      color: #6fb4aa;
       font-size: 14px;
     }
   }
@@ -140,7 +142,7 @@ export const DescriptionDoctor = styled.div`
 export const FastLinks = styled.div`
   text-align: left;
 
-  h3 {
+  h2 {
     color: #fff;
     font-size: 20px;
     margin-bottom: 16px;
@@ -159,7 +161,7 @@ export const FastLinks = styled.div`
       font-size: 14px;
 
       &:hover {
-        color: #4b9388;
+        color: #6fb4aa;
       }
     }
   }
@@ -168,7 +170,7 @@ export const FastLinks = styled.div`
 export const Services = styled.div`
   text-align: left;
 
-  h3 {
+  h2 {
     color: #fff;
     font-size: 20px;
     margin-bottom: 16px;
@@ -189,7 +191,7 @@ export const Services = styled.div`
 export const Contato = styled.div`
   text-align: left;
 
-  h3 {
+  h2 {
     color: #fff;
     font-size: 20px;
     margin-bottom: 16px;

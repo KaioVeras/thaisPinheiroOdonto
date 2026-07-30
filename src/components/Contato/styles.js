@@ -96,6 +96,10 @@ export const ContainerContent = styled.div`
   @media (max-width: 500px) {
     .map-container {
       height: 400px;
+
+      iframe {
+        height: 100%;
+      }
     }
   }
 `;

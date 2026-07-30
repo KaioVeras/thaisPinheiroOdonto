@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { NavBarOpenContainer, NavBar, ContainerButtons } from "./styles";
 import { useMenuStore } from "../../store/menuStore";
 
@@ -6,41 +7,68 @@ import SecondaryButton from "../SecondaryButton";
 
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
-function NavBarOpen({ onScrollSection }) {
+function NavBarOpen() {
     const isOpenMenu = useMenuStore(state => state.isOpenMenu);
-    const toggleMenu = useMenuStore(state => state.toggleMenu)
+    const closeMenu = useMenuStore(state => state.closeMenu);
+    const menuRef = useRef(null);
+    const firstLinkRef = useRef(null);
 
-    const handleScrollAndClose = (sectionId) => {
-        onScrollSection(sectionId)
-        toggleMenu();
-    }
+    const closeAndRestoreFocus = () => {
+        closeMenu();
+        document.getElementById('mobile-menu-button')?.focus();
+    };
 
-    const handleClick = (e, sectionId) => {
-        e.preventDefault();
-        handleScrollAndClose(sectionId);
-    }
+    useEffect(() => {
+        if (!isOpenMenu) return;
+
+        firstLinkRef.current?.focus();
+
+        const handleKeyDown = (event) => {
+            if (event.key === 'Escape') {
+                closeMenu();
+                document.getElementById('mobile-menu-button')?.focus();
+            }
+
+            if (event.key === 'Tab') {
+                const focusableElements = menuRef.current?.querySelectorAll('a[href]');
+                const firstElement = focusableElements?.[0];
+                const lastElement = focusableElements?.[focusableElements.length - 1];
+
+                if (event.shiftKey && document.activeElement === firstElement) {
+                    event.preventDefault();
+                    lastElement?.focus();
+                } else if (!event.shiftKey && document.activeElement === lastElement) {
+                    event.preventDefault();
+                    firstElement?.focus();
+                }
+            }
+        };
+
+        document.addEventListener('keydown', handleKeyDown);
+        return () => document.removeEventListener('keydown', handleKeyDown);
+    }, [isOpenMenu, closeMenu]);
 
     return (
-        <NavBarOpenContainer display={isOpenMenu ? 'block' : 'none'}>
-            <NavBar>
+        <NavBarOpenContainer ref={menuRef} id="mobile-navigation" display={isOpenMenu ? 'block' : 'none'} aria-hidden={!isOpenMenu}>
+            <NavBar aria-label="Navegação móvel">
                 <ul>
                     <li>
-                        <a href="#hero-section" onClick={(e) => handleClick(e, 'hero-section')}>Início</a>
+                        <a ref={firstLinkRef} href="#hero-section" onClick={closeAndRestoreFocus}>Início</a>
                     </li>
                     <li>
-                        <a href="#about" onClick={(e) => handleClick(e, 'about')}>Sobre</a>
+                        <a href="#about" onClick={closeAndRestoreFocus}>Sobre</a>
                     </li>
                     <li>
-                        <a href="#services" onClick={(e) => handleClick(e, 'services')}>Serviços</a>
+                        <a href="#services" onClick={closeAndRestoreFocus}>Serviços</a>
                     </li>
                     <li>
-                        <a href="#about-clinic" onClick={(e) => handleClick(e, 'about-clinic')}>Clínica</a>
+                        <a href="#about-clinic" onClick={closeAndRestoreFocus}>Clínica</a>
                     </li>
                     <li>
-                        <a href="#quality" onClick={(e) => handleClick(e, 'quality')}>Clientes</a>
+                        <a href="#quality" onClick={closeAndRestoreFocus}>Clientes</a>
                     </li>
                     <li>
-                        <a href="#contato" onClick={(e) => handleClick(e, 'contato')}>Contato</a>
+                        <a href="#contato" onClick={closeAndRestoreFocus}>Contato</a>
                     </li>
                 </ul>
             </NavBar>

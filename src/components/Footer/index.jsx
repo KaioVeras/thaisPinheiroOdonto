@@ -3,7 +3,7 @@ import { FooterContainer, DescriptionDoctor, FooterContent, FastLinks, Services,
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MapPin, Phone, Clock, Copyright } from 'lucide-react';
 
-function Footer({ onScrollSection }) {
+function Footer() {
     return (
         <FooterContainer>
             <FooterContent>
@@ -12,7 +12,7 @@ function Footer({ onScrollSection }) {
                         <div className='logo-footer'>
                             <img src="https://storage.googleapis.com/thais-odonto-imagens/logoThaisOdonto.svg" alt="Logo Thais Pinheiro Odontologia" />
                             <div>
-                                <h3>Thaís Pinheiro Odontologia</h3>
+                                <span className="brand-name">Thaís Pinheiro Odontologia</span>
                                 <p>Especialista em Endodontia</p>
                             </div>
                         </div>
@@ -24,7 +24,7 @@ function Footer({ onScrollSection }) {
                                 href='https://www.instagram.com/thais_pinheiro_odontologia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' 
                                 target='_blank'
                                 rel='noopener noreferrer'
-                                aria-label='Acessar Instagram de Thaís Pineheiro Odontologia'
+                                aria-label='Acessar Instagram de Thaís Pinheiro Odontologia'
                             >
                                 <div className='icons'>
                                     <FaInstagram color='#fff' size={18} />
@@ -44,27 +44,27 @@ function Footer({ onScrollSection }) {
                     </DescriptionDoctor>
 
                     <FastLinks>
-                        <h3>Links Rápidos</h3>
+                        <h2>Links Rápidos</h2>
 
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="#hero-section" onClick={(e) => { e.preventDefault(); onScrollSection('hero-section'); }}>Início</a>
+                                    <a href="#hero-section">Início</a>
                                 </li>
                                 <li>
-                                    <a href="#about" onClick={(e) => { e.preventDefault(); onScrollSection('about'); }}>Sobre</a>
+                                    <a href="#about">Sobre</a>
                                 </li>
                                 <li>
-                                    <a href="#services" onClick={(e) => { e.preventDefault(); onScrollSection('services'); }}>Serviços</a>
+                                    <a href="#services">Serviços</a>
                                 </li>
                                 <li>
-                                    <a href="#about-clinic" onClick={(e) => { e.preventDefault(); onScrollSection('about-clinic'); }}>Clínica</a>
+                                    <a href="#about-clinic">Clínica</a>
                                 </li>
                                 <li>
-                                    <a href="#quality" onClick={(e) => { e.preventDefault(); onScrollSection('quality'); }}>Clientes</a>
+                                    <a href="#quality">Clientes</a>
                                 </li>
                                 <li>
-                                    <a href="#contato" onClick={(e) => { e.preventDefault(); onScrollSection('contato'); }}>Contato</a>
+                                    <a href="#contato">Contato</a>
                                 </li>
                             </ul>
                         </nav>
@@ -73,11 +73,11 @@ function Footer({ onScrollSection }) {
 
                 <div className='divider-links'>
                     <Services>
-                        <h3>Nossos Serviços</h3>
+                        <h2>Nossos Serviços</h2>
 
                         <ul>
                             <li>Clínica Geral</li>
-                            <li>Destística (Restaurações)</li>
+                            <li>Dentística (Restaurações)</li>
                             <li>Periodontia (Limpeza)</li>
                             <li>Cirurgia</li>
                             <li>Endodontia (Canal)</li>
@@ -86,7 +86,7 @@ function Footer({ onScrollSection }) {
                     </Services>
 
                     <Contato>
-                        <h3>Contato</h3>
+                        <h2>Contato</h2>
 
                         <div className='card-contact'>
                             <MapPin size={18} className='icon' />
@@ -112,7 +112,7 @@ function Footer({ onScrollSection }) {
             <Line>{/** Linha de separação */}</Line>
 
             <CopyRight>
-                <p><Copyright size={12} /> 2025 Thaís Pinheiro Odontologia | CRO-DF 8454. Todos os direitos reservados.</p>
+                <p><Copyright size={12} /> {new Date().getFullYear()} Thaís Pinheiro Odontologia | CRO-DF 8454. Todos os direitos reservados.</p>
             </CopyRight>
         </FooterContainer>
     );

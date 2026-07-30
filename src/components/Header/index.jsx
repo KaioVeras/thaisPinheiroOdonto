@@ -9,25 +9,20 @@ import { IoClose } from "react-icons/io5";
 import PrimaryButton from '../PrimaryButton';
 import SecondaryButton from '../SecondaryButton';
 
-function Header({ onScrollSection }) {
+function Header() {
 
     const isOpenMenu = useMenuStore(state => state.isOpenMenu);
     const toggleMenu = useMenuStore(state => state.toggleMenu);
 
-    const handleClick = (e, sectionId) => {
-        e.preventDefault();
-        onScrollSection(sectionId);
-    }
-
     return (
         <Container>
             <div className='header-content'>
-                <ContainerLogo href="#hero-section" onClick={(e) => handleClick(e, 'hero-section')}>
+                <ContainerLogo href="#hero-section">
                     <img src="https://storage.googleapis.com/thais-odonto-imagens/logoThaisOdonto.svg" alt
                         ="Logo Thais Pinheiro Odontologia" />
 
                     <div className='logo-text'>
-                        <h1>Thaís Pinheiro {innerWidth < 500 ? "Odonto" : "Odontologia"}</h1>
+                        <span className="brand-name">Thaís Pinheiro Odontologia</span>
                         <p>Especialista em Endodontia</p>
                     </div>
                 </ContainerLogo>
@@ -35,22 +30,22 @@ function Header({ onScrollSection }) {
                 <NavBar>
                     <ul>
                         <li>
-                            <a href="#hero-section" onClick={(e) => handleClick(e, 'hero-section')}>Início</a>
+                            <a href="#hero-section">Início</a>
                         </li>
                         <li>
-                            <a href="#about" onClick={(e) => handleClick(e, 'about')}>Sobre</a>
+                            <a href="#about">Sobre</a>
                         </li>
                         <li>
-                            <a href="#services" onClick={(e) => handleClick(e, 'services')}>Serviços</a>
+                            <a href="#services">Serviços</a>
                         </li>
                         <li>
-                            <a href="#about-clinic" onClick={(e) => handleClick(e, 'about-clinic')}>Clínica</a>
+                            <a href="#about-clinic">Clínica</a>
                         </li>
                         <li>
-                            <a href="#quality" onClick={(e) => handleClick(e, 'quality')}>Clientes</a>
+                            <a href="#quality">Clientes</a>
                         </li>
                         <li>
-                            <a href="#contato" onClick={(e) => handleClick(e, 'contato')}>Contato</a>
+                            <a href="#contato">Contato</a>
                         </li>
                     </ul>
                 </NavBar>
@@ -71,9 +66,12 @@ function Header({ onScrollSection }) {
                 </ContainerButtons>
 
                 <MobileButton
+                    id="mobile-menu-button"
                     className='mobile-button'
                     onClick={toggleMenu}
-                    aria-label='Toggle Menu'
+                    aria-label={isOpenMenu ? 'Fechar menu' : 'Abrir menu'}
+                    aria-expanded={isOpenMenu}
+                    aria-controls="mobile-navigation"
                 >
                     {isOpenMenu ? <IoClose size={26} /> : <FiMenu size={24} />}
                 </MobileButton>

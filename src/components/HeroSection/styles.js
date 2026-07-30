@@ -6,7 +6,7 @@ export const HeroSectionContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 900px;
+    min-height: 900px;
     width: 100%;
     padding: 0px 30px;
     scroll-margin-top: 40px;
@@ -24,6 +24,7 @@ export const HeroSectionContainer = styled.section`
 
         .hero-title-color {
             color: #4D9388;
+            display: block;
         }
     }
 
@@ -129,19 +130,23 @@ export const HeroCard = styled.div`
     }
 `;
 
-export const ButtonServices = styled.button`
+export const ButtonServices = styled.a`
     width: 360px;
     height: 48px;
     border-radius: 30px;
-    border: 1px solid #4D9388;
+    border: 1px solid #35776e;
     background-color: transparent;
-    color: #4D9388;
+    color: #35776e;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 
     &:hover {
-        background-color: #4D9388;
+        background-color: #35776e;
         color: #fff;
     }
 

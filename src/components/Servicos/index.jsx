@@ -60,9 +60,9 @@ function Servicos() {
                 </div>
             </ContainerCards>
 
-            <button className='secondary-button-mobile'>
-                <a href="https://wa.me/556135506324" target='_blank'>Precisa de um especialista? Fale conosco</a>
-            </button>
+            <a className='secondary-button-mobile' href="https://wa.me/556135506324" target='_blank' rel='noopener noreferrer'>
+                Precisa de um especialista? Fale conosco
+            </a>
         </ServicosContainer>
     );
 }

@@ -130,6 +130,8 @@ export const NotesGoogle = styled.div`
 
   .stars-google {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     color: #4b9388;
     gap: 20px;

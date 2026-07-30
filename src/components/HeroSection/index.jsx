@@ -1,15 +1,15 @@
 import { HeroSectionContainer, HeroCard, ButtonServices } from "./styles";
-import { Shield, Heart, Award, MessageCircle } from 'lucide-react';
+import { Shield, Heart, Award } from 'lucide-react';
 
 import SecondaryButton from "../SecondaryButton";
 import PrimaryButton from "../PrimaryButton";
 
-function HeroSection({ onScrollSection }) {
+function HeroSection() {
     return (
         <HeroSectionContainer id="hero-section">
             <div className="hero-content">
                 <div className="hero-title">
-                    <h1>Sorrir com saúde</h1><h1 className="hero-title-color">começa aqui</h1>
+                    <h1>Sorrir com saúde <span className="hero-title-color">começa aqui</span></h1>
                 </div>
 
                 <p className="hero-description">Tratamento de canal com excelência, cuidado e responsabilidade. Preservamos a estrutura natural do seu dente com tecnologia avançada e atendimento humanizado.</p>
@@ -59,7 +59,7 @@ function HeroSection({ onScrollSection }) {
                         radius="30px"
                     />
 
-                    <ButtonServices onClick={() => onScrollSection('services')}>
+                    <ButtonServices href="#services">
                         Saiba mais sobre nossos serviços
                     </ButtonServices>
                 </div>
