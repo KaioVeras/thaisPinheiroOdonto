@@ -3,7 +3,7 @@
 > Site institucional moderno e responsivo para consultório odontológico especializado em **Endodontia**.
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev)
-[![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)](https://vite.dev)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev)
 [![Styled Components](https://img.shields.io/badge/styled--components-6-DB7093?logo=styled-components&logoColor=white)](https://styled-components.com)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
@@ -34,7 +34,7 @@ Landing page desenvolvida para apresentar o consultório da Dra. Thaís Pinheiro
 |-----------|-----------|
 | [React 19](https://react.dev) | Biblioteca para construção de interfaces |
 | [JavaScript (JSX)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) | Linguagem do projeto |
-| [Vite 7](https://vite.dev) | Build tool moderna e extremamente rápida |
+| [Vite 8](https://vite.dev) | Ferramenta de desenvolvimento e build |
 | [styled-components 6](https://styled-components.com) | CSS-in-JS para estilização dos componentes |
 | [Zustand](https://zustand.docs.pmnd.rs) | Gerenciamento de estado leve e simples |
 | [Lucide React](https://lucide.dev) | Ícones modernos em SVG |
@@ -84,7 +84,7 @@ src/
 
 ## ⚙️ Pré-requisitos
 
-- [Node.js](https://nodejs.org) `^20.19.0`, `^22.13.0` ou superior
+- [Node.js](https://nodejs.org) `24.x` (LTS; versão definida também em `.nvmrc`)
 - npm (incluído com o Node.js)
 
 ## 🔧 Como Executar
@@ -97,7 +97,8 @@ git clone https://github.com/seu-usuario/thaisPinheiroOdonto.git
 cd thaisPinheiroOdonto
 
 # 3. Instale as dependências
-npm install
+nvm use
+npm ci
 
 # 4. Inicie o servidor de desenvolvimento
 npm run dev
@@ -120,6 +121,9 @@ O projeto já está configurado para deploy na **Vercel** (arquivo `vercel.json`
 
 - Headers de segurança (HSTS, X-Frame-Options, XSS Protection)
 - Cache imutável para assets e fontes
+- Redirecionamento permanente do alias `thais-pinheiro-odonto.vercel.app` para `https://www.thaispinheiro.odo.br/`, sem abranger os hosts de preview
+
+Use Node.js `24.x` também na Vercel. Antes de publicar, execute `npm run lint` e `npm run build`. Após o deploy, confira o redirecionamento do alias antigo, `/robots.txt`, `/sitemap.xml` e a URL canônica no domínio próprio.
 
 A build gera arquivos estáticos, portanto também pode ser hospedado em:
 - Netlify

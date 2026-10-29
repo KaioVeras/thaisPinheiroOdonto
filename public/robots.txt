@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thais-pinheiro-odonto.vercel.app/sitemap.xml
+Sitemap: https://www.thaispinheiro.odo.br/sitemap.xml
