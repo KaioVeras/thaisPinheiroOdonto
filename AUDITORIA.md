@@ -38,6 +38,34 @@ A migração para Vite 8 usa plugin-react 6. A configuração de build fixa Chro
 
 Não houve comparação visual em navegador, commit, push ou deploy. Continuam pendentes a publicação e a verificação do redirecionamento, das URLs de SEO e dos avisos do painel da Vercel após o deploy. O resultado do npm audit expressa os avisos conhecidos na data da consulta, não uma garantia de ausência de falhas.
 
+## Pendências atuais e próxima implementação
+
+### Validação desta publicação
+
+- Deploy observado nas capturas enviadas pelo usuário: produção em estado Ready, commit 751e7f0, domínio www.thaispinheiro.odo.br. O overview exibiu firewall ativo sem eventos recentes e taxa de erro de 0% na janela mostrada. Isso não substitui os testes funcionais nem confirma a versão de Node usada no build.
+- Consulta pública após o deploy: página principal HTTP 200; título, canonical, og:url, URL do JSON-LD, robots.txt e sitemap.xml corrigidos. O domínio sem www retorna 308 para www.
+- Pendência confirmada: o alias thais-pinheiro-odonto.vercel.app ainda responde 200, servindo os mesmos assets da versão atual e canonical correto, mas sem efetuar o redirecionamento esperado. A regra em vercel.json não teve o efeito esperado em produção; revisar sua aplicação/configuração na Vercel. Não é evidência de falha no domínio principal.
+
+- [ ] Conferir o preview da Vercel em desktop e celular: layout, menu, navegação, mapa e links de contato.
+- [ ] Conferir o build/deploy com Node 24 e os avisos específicos do painel da Vercel.
+- [ ] Após publicar, verificar o redirecionamento do alias antigo para o domínio com www, sem afetar previews.
+- [x] Após publicar, verificar canonical, robots.txt, sitemap.xml, og:url e URL do JSON-LD no domínio de produção.
+- [ ] Conferir a prévia real de compartilhamento no domínio de produção.
+
+Esses itens são verificações da entrega atual; não dependem de uma nova funcionalidade.
+
+### Melhorias para a próxima implementação
+
+- [ ] Conferir Search Console: propriedade do domínio, envio do sitemap e inspeção/indexação da URL principal.
+- [ ] Medir desempenho mobile e Core Web Vitals com Lighthouse/PageSpeed e, quando houver dados, métricas reais.
+- [ ] Validar os dados estruturados no Rich Results Test e avaliar campos adicionais com informações confirmadas da cliente.
+- [ ] Conferir a prévia social; avaliar descrição alternativa e dimensões da imagem de compartilhamento.
+- [ ] Avaliar pré-renderização para disponibilizar o conteúdo principal no HTML inicial.
+- [ ] Corrigir o repasse de isVisible/delay ao DOM, sem modificar as animações.
+- [ ] Decidir com o usuário sobre o rótulo “Ligar” e a atualização do Lucide que muda os desenhos de Smile/Zap.
+
+Pré-renderização e a atualização do Lucide são melhorias opcionais; não são bloqueios técnicos identificados para esta publicação. O acompanhamento no Search Console pode começar assim que a versão corrigida estiver publicada.
+
 ## Primeira implementação local — 29/10/2026
 
 A análise abaixo registra o estado encontrado antes das correções. Na primeira implementação autorizada foram aplicados:
@@ -55,7 +83,7 @@ Verificações: `npm run lint` passou; validações locais de HTML/metadados, JS
 
 O cache npm foi inspecionado e não contém metadados/tarballs das dependências diretas deste projeto. Não foi possível atualizar pacotes offline; suas versões foram preservadas. Apenas a configuração de Node foi sincronizada no lockfile.
 
-## Prioridades antes da divulgação
+## Prioridades identificadas na auditoria inicial (histórico)
 
 1. Corrigir todas as referências de SEO para `https://www.thaispinheiro.odo.br/`, endereço final utilizado atualmente pela hospedagem.
 2. Atualizar Vite de 7.3.6 para pelo menos 7.3.7 e revisar a árvore transitiva com `npm audit` quando o registro npm estiver acessível.
